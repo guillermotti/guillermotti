@@ -19,9 +19,17 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "../node_modules/devicons/css/devicons.min.css",
+        "../node_modules/font-awesome/css/font-awesome.min.css",
+        "../node_modules/simple-line-icons/css/simple-line-icons.css",
+        "css/styles.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.min.js",
+        "../node_modules/jquery-easing/jquery.easing.1.3.js",
+        "js/resume.min.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

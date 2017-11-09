@@ -1,5 +1,16 @@
 {
     "_LANGUAGE": "Language",
     "_ABOUT": "About",
-    "es": "Spanish"
+    "_EXPERIENCE": "Experience",
+    "_EDUCATION": "Education",
+    "_SKILLS": "Skills",
+    "_INTERESTS": "Interests",
+    "_AWARDS": "Awards",
+    "_ADDRESS": "Gijón, Asturias - Spain",
+    "_DESCRIPTION": "Since childhood, I compete responsibly my hobbies with my education and now also with work. Always eager to learn and discover new goals. I have a great capacity for learning and I'm easily comfortable in work groups. I consider myself responsible and although I am not an expert in something concrete, I have the basic notions of many things, which helps me to learn nimbly. I like competitiveness and I think that with humility and ambition everything is much simpler. I enjoy helping others and sharing the knowledge I know.",
+    "_DXC_TIME": "Febraury 2017 - Present",
+    "_DXC_DESCRIPTION": "Web Technologies Team: Framework development based on AngularJS and Angular 2/4 for web applications. Front-end web application development with AngularJS and Angular 2/4, own framework and REST services. OmniChannel project.",
+    "_DXC_JOB": "Application Developer Senior Assistant",
+    "_FREELANCE_DESCRIPTION": "Web development and bussiness orienteering at web universe. Technologies used: Bootstrap, HTML5, CSS3, JavaScript, jQuery...",
+    "_FREELANCE_TIME": "July 2016 - Present"
 }

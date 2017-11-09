@@ -1,4 +1,16 @@
 {
     "_LANGUAGE" : "Idioma",
-    "_ABOUT" : "Sobre mí" 
+    "_ABOUT" : "Sobre mí",
+    "_EXPERIENCE": "Experiencia",
+    "_EDUCATION": "Estudios",
+    "_SKILLS": "Habilidades", 
+    "_INTERESTS": "Intereses",
+    "_AWARDS": "Premios",
+    "_ADDRESS": "Gijón, Asturias - España",
+    "_DESCRIPTION": "Desde pequeño compagino responsablemente el deporte con los estudios y ahora también con el trabajo. Siempre con ganas de aprender y descubrir nuevas metas. Tengo una gran capacidad de aprendizaje y me desenvuelvo con facilidad en los grupos de trabajo. Me considero responsable y aunque no soy un experto en algo concreto, tengo las nociones básicas de muchas cosas, lo que me sirve para aprender ágilmente. Me gusta la competitividad y pienso que con humildad y ambición todo es mucho más sencillo. Disfruto ayudando a los demás y compartiendo los conocimientos que sé.",
+    "_DXC_TIME": "Febrero 2017 - Actualidad",
+    "_DXC_DESCRIPTION": "Web Technologies Team: Desarrollo de framework en AngularJS y Angular 2 para aplicaciones web. Desarrollo de aplicaciones web de front-end con AngularJS y Angular 2, framework propio y servicios REST. Proyecto OmniChannel.",
+    "_DXC_JOB": "Application Developer Senior Assistant",
+    "_FREELANCE_DESCRIPTION": "Realización de páginas web y orientación a empresas en el universo web. Tecnologías usadas: Bootstrap, HTML5, CSS3, JavaScript, jQuery...",
+    "_FREELANCE_TIME": "Julio 2016 - Actualidad"
 }

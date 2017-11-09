@@ -111,3 +111,14 @@
     a:hover, a:focus, a:active {
       color: #824027; }
   
+.languageSelect{
+  margin-right: 5%;
+}
+
+.languageSelectSelect{
+  color: #777;
+  font-weight: 300;
+  text-transform: inherit;
+  background-color: white;
+  position: absolute;
+}

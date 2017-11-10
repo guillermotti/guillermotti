@@ -24,7 +24,7 @@
         "../node_modules/devicons/css/devicons.min.css",
         "../node_modules/font-awesome/css/font-awesome.min.css",
         "../node_modules/simple-line-icons/css/simple-line-icons.css",
-        "css/styles.css"
+        "scss/styles.scss"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.min.js",

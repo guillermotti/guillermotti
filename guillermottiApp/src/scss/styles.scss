@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
- body {
+body {
     font-family: 'Open Sans', serif;
     padding-top: 54px;
     color: #868e96; }
@@ -37,14 +37,14 @@
   .list-social-icons a {
     color: #495057; }
     .list-social-icons a:hover {
-      color: #BD5D38; }
+      color: rgb(46, 129, 51); }
     .list-social-icons a .fa-lg {
       font-size: 1.75rem; }
   
   .list-icons {
     font-size: 3rem; }
     .list-icons .list-inline-item i:hover {
-      color: #BD5D38; }
+      color: rgb(49, 126, 68); }
   
   #sideNav .navbar-nav .nav-item .nav-link {
     font-weight: 600;
@@ -101,15 +101,15 @@
       padding-bottom: 3rem !important; } }
   
   .bg-primary {
-    background-color: #BD5D38 !important; }
+    background-color: rgb(49, 126, 68) !important; }
   
   .text-primary {
-    color: #BD5D38 !important; }
+    color: rgb(49, 126, 68) !important; }
   
   a {
-    color: #BD5D38; }
+    color: rgb(49, 126, 68); }
     a:hover, a:focus, a:active {
-      color: #824027; }
+      color: #1b3321; }
   
 .languageSelect{
   margin-right: 5%;
@@ -121,4 +121,8 @@
   text-transform: inherit;
   background-color: white;
   position: absolute;
+}
+
+.my-auto{
+    text-align: justify;
 }

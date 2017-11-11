@@ -49,8 +49,8 @@ export class LanguageSelectComponent {
   */
 
     constructor(public translate: TranslateService) {
-        translate.addLangs(['en', 'es']);
-        translate.setDefaultLang('en');
+        translate.addLangs(['es', 'en']);
+        translate.setDefaultLang('es');
     }
 
 }

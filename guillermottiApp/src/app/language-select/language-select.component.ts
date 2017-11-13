@@ -2,7 +2,7 @@ import { Component, Input, ViewEncapsulation } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 /**
- Represents a HTML select component. Default behaviour will be inherit from DefaultComponent.
+ Represents a HTML select component.
  @class
  */
 @Component({
@@ -39,12 +39,11 @@ export class LanguageSelectComponent {
 
     }
 
-
      /**
       Contructor of languageSelect component.
       @class DefaultComponent
       @classdesc Represents a dropdown component to allow the user to choose among the available languages. .
-      @param {TranslateService} translate Ocinfra  service providing internationalization.
+      @param {TranslateService} translate service providing internationalization.
  
   */
 

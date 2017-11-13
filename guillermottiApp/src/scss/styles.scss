@@ -1,6 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
+@font-face {
+  font-family: LearningCurve;
+  src: url(../assets/LearningCurve.ttf);
+}
+
 body {
     font-family: 'Open Sans', serif;
     padding-top: 54px;
@@ -46,7 +51,14 @@ body {
     font-size: 3rem; }
     .list-icons .list-inline-item i:hover {
       color: rgb(49, 126, 68); }
+      .list-icons .row i:hover {
+        color: rgb(49, 126, 68); }
   
+  .row {
+    align-items: center;
+    padding-bottom: 1%;
+  }
+
   #sideNav .navbar-nav .nav-item .nav-link {
     font-weight: 600;
     text-transform: uppercase; }
@@ -60,7 +72,7 @@ body {
       display: flex;
       flex-direction: column;
       width: 17rem;
-      height: 100vh; }
+      height: 100%; }
       #sideNav .navbar-brand {
         display: flex;
         margin: auto auto 0;
@@ -126,4 +138,95 @@ body {
 
 .my-auto{
     text-align: justify;
+}
+
+@media (max-width: 414px) {
+  ngb-progressbar {
+    position: absolute !important;
+    padding-left: 25% !important;
+  }
+}
+
+.rotate {
+  transform: rotate(180deg);
+  -moz-transform: rotate(180deg); // Mozilla
+  -o-transform: rotate(180deg); // Opera
+  -webkit-transform: rotate(180deg); // Webkit
+}
+
+.logo {
+  width: 100%;
+  margin-top: 15%;
+}
+
+.logoCSC {
+  width: 40%;
+  margin-top: 9%;
+}
+
+.logoIndra {
+  width: 69%;
+  margin-top: 12%;
+}
+
+.logoUniovi {
+  width: 59%;
+  margin-top: 5%;
+}
+
+.logoSanjac {
+  width: 70%;
+  margin-top: 10%;
+}
+
+.noJustify {
+  text-align: left !important;
+}
+
+.salicaria {
+  text-align: center !important;
+}
+
+.salicaria a{
+  color: black !important;
+  font-family: LearningCurve !important;
+  font-size: -webkit-xxx-large;
+}
+
+.salicaria a:hover{
+  text-decoration-line: none;
+}
+
+.devicons {
+  color: black !important;
+  padding-left: 6.5%;
+}
+
+.devicon {
+  color: black !important;
+  padding-left: 6.5%;
+}
+
+.flag-icon {
+  width: 27%;
+}
+
+#circulo { 
+  width: 150px;
+  height: 150px;
+  background:rgb(49, 126, 68); 
+  -moz-border-radius: 50%; 
+  -webkit-border-radius: 50%; 
+  border-radius: 50%;
+  display: inline-table;
+  margin-right: 5%;
+  margin-left: 20%;
+  margin-bottom: 5%;
+  border: 0.5rem solid rgba(255, 255, 255, 0.2);
+}
+
+.interests {
+  text-align: center;
+  padding-top: 42%;
+  color: black;
 }

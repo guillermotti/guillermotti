@@ -57,5 +57,18 @@
     "_MUSIC": "Music",
     "_TECHNOLOGY": "Technology",
     "_TV_SHOWS": "TV Shows",
-    "_FRIENDS": "Friends"
+    "_FRIENDS": "Friends",
+    "_COOK": "Cook",
+    "_TRAVEL": "Travel",
+    "_TABLE_GAMES": "Table games",
+    "_CONTACT": "Contact",
+    "_FREAK_WORLD": "Freak world",
+    "_GET_IN_TOUCH": "Form to get in touch",
+    "_GET_IN_TOUCH_MESSAGE": "If you like my work, don't hesitate to send me your ideas to build a new web page for your bussiness. Do you think I could be a member of your team? I am always searching for some new challenges. Please, write me below!",
+    "_NAME": "Name",
+    "_EMAIL": "E-mail",
+    "_PHONE_NUMBER": "Phone number",
+    "_MESSAGE": "Message",
+    "_SEND": "Send",
+    "_CV": "Curriculum Vitae"
 }

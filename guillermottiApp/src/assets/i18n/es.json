@@ -58,5 +58,18 @@
     "_MUSIC": "Música",
     "_TECHNOLOGY": "Tecnología",
     "_TV_SHOWS": "Series",
-    "_FRIENDS": "Amigos"  
+    "_FRIENDS": "Amigos",
+    "_COOK": "Cocina",
+    "_TRAVEL": "Viajes",
+    "_TABLE_GAMES": "Juegos de mesa",
+    "_FREAK_WORLD": "Mundo friki",
+    "_CONTACT": "Contacto",    
+    "_GET_IN_TOUCH": "Formulario de contacto",
+    "_GET_IN_TOUCH_MESSAGE": "Si te gusta mi trabajo, no dudes en enviarme tus ideas para construir una página web para tu negocio. ¿Crees que puedo encajar en tu equipo de trabajo? Estoy siempre buscando nuevos desafíos. ¡Escríbeme debajo!",
+    "_NAME": "Nombre",
+    "_EMAIL": "E-mail",
+    "_PHONE_NUMBER": "Número de teléfono",
+    "_MESSAGE": "Mensaje",
+    "_SEND": "Enviar",
+    "_CV": "Curriculum Vitae"    
 }

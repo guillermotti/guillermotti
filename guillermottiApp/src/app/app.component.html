@@ -28,6 +28,9 @@
       <li class="nav-item">
         <a class="nav-link js-scroll-trigger" href="#interests">{{ '_INTERESTS' | translate }}</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="#contact">{{ '_CONTACT' | translate }}</a>
+      </li>
       <!--<li class="nav-item">
         <a class="nav-link js-scroll-trigger" href="#awards">{{ '_AWARDS' | translate }}</a>
       </li>-->
@@ -59,7 +62,7 @@
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <p class="mb-5">{{ '_DESCRIPTION' | translate }}</p>
       </div>
-      <ul class="list-inline list-social-icons mb-0">
+      <ul class="list-inline list-social-icons mb-5">
         <li class="list-inline-item">
           <a href="https://www.facebook.com/guillermotti">
             <span class="fa-stack fa-lg">
@@ -109,6 +112,10 @@
           </a>
         </li>
       </ul>
+      <br>
+      <div class="col-lg-12 salicaria">
+        <button id="cvButton" class="btn btn-secondary greyColor" onclick="window.open('GuillermottiCV.pdf')">{{ '_CV' | translate }}</button>
+      </div>
     </div>
   </section>
 
@@ -144,6 +151,11 @@
         </div>
         <div class="resume-date text-md-right col-xs-3 col-sm-3 col-md-3 col-lg-3">
           <span class="text-primary">{{ '_FREELANCE_TIME' | translate }}</span>
+          <div>
+            <a href="https://www.guillermotti.com">
+              <img class="mx-auto mb-2 logo2" src="/img/logo2.png">
+            </a>
+          </div>
         </div>
       </div>
 
@@ -450,63 +462,186 @@
   <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
     <div class="my-auto">
       <h2 class="mb-5">{{ '_INTERESTS' | translate }}</h2>
-      <div class="resume-item d-flex flex-column flex-md-row mb-5">
-        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-          <div class="row">
-            <div id="circulo">
-              <p class="interests">{{ '_VIDEOGAMES' | translate }}</p>
-            </div>
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="interests">
+            <span class="fa-stack fa-5x">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-gamepad fa-stack-1x interestsIcon"></i>
+            </span>
+            <h4>
+              <strong>{{ '_VIDEOGAMES' | translate }}</strong>
+            </h4>
           </div>
         </div>
-        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-          <div class="row">
-            <div id="circulo">
-              <p class="interests">{{ '_CINEMA' | translate }}</p>
-            </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="interests">
+            <span class="fa-stack fa-5x">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-film fa-stack-1x interestsIcon"></i>
+            </span>
+            <h4>
+              <strong>{{ '_CINEMA' | translate }}</strong>
+            </h4>
           </div>
         </div>
-        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-          <div class="row">
-            <div id="circulo">
-              <p class="interests">{{ '_SPORTS' | translate }}</p>
-            </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="interests">
+            <span class="fa-stack fa-5x">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-futbol-o fa-stack-1x interestsIcon"></i>
+            </span>
+            <h4>
+              <strong>{{ '_SPORTS' | translate }}</strong>
+            </h4>
           </div>
         </div>
-        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-          <div class="row">
-            <div id="circulo">
-              <p class="interests">{{ '_MUSIC' | translate }}</p>
-            </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="interests">
+            <span class="fa-stack fa-5x">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-music fa-stack-1x interestsIcon"></i>
+            </span>
+            <h4>
+              <strong>{{ '_MUSIC' | translate }}</strong>
+            </h4>
           </div>
         </div>
       </div>
 
-      <div class="resume-item d-flex flex-column flex-md-row mb-5">
-        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-          <div class="row">
-            <div id="circulo">
-              <p class="interests">{{ '_TECHNOLOGY' | translate }}</p>
-            </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6">
+          <div class="interests">
+            <span class="fa-stack fa-5x">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-desktop fa-stack-1x interestsIcon"></i>
+            </span>
+            <h4>
+              <strong>{{ '_TECHNOLOGY' | translate }}</strong>
+            </h4>
           </div>
         </div>
-        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-          <div class="row">
-            <div id="circulo">
-              <p class="interests">{{ '_TV_SHOWS' | translate }}</p>
-            </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="interests">
+            <span class="fa-stack fa-5x">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-users fa-stack-1x interestsIcon"></i>
+            </span>
+            <h4>
+              <strong>{{ '_FRIENDS' | translate }}</strong>
+            </h4>
           </div>
         </div>
-        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-          <div class="row">
-            <div id="circulo">
-              <p class="interests">{{ '_FRIENDS' | translate }}</p>
-            </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="interests">
+            <span class="fa-stack fa-5x">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-television fa-stack-1x interestsIcon"></i>
+            </span>
+            <h4>
+              <strong>{{ '_TV_SHOWS' | translate }}</strong>
+            </h4>
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="interests">
+            <span class="fa-stack fa-5x">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-cutlery fa-stack-1x interestsIcon"></i>
+            </span>
+            <h4>
+              <strong>{{ '_COOK' | translate }}</strong>
+            </h4>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="interests">
+            <span class="fa-stack fa-5x">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-plane fa-stack-1x interestsIcon"></i>
+            </span>
+            <h4>
+              <strong>{{ '_TRAVEL' | translate }}</strong>
+            </h4>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="interests">
+            <span class="fa-stack fa-5x">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-puzzle-piece fa-stack-1x interestsIcon"></i>
+            </span>
+            <h4>
+              <strong>{{ '_TABLE_GAMES' | translate }}</strong>
+            </h4>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="interests">
+            <span class="fa-stack fa-5x">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-rebel fa-stack-1x interestsIcon"></i>
+            </span>
+            <h4>
+              <strong>{{ '_FREAK_WORLD' | translate }}</strong>
+            </h4>
           </div>
         </div>
       </div>
     </div>
 
+  </section>
 
+  <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="contact">
+    <div class="my-auto">
+      <h2 class="mb-5">{{ '_CONTACT' | translate }}</h2>
+
+      <div class="bg-faded p-4 my-4">
+        <h3 class="mb-0 salicaria">{{ '_GET_IN_TOUCH' | translate }}</h3>
+        <br>
+        <p>{{ '_GET_IN_TOUCH_MESSAGE' | translate }}</p>
+        <br>
+        <hr class="divider">
+        <form name="sentMessage" id="contactForm" novalidate>
+          <div class="row">
+            <div class="form-group col-lg-4">
+              <label class="text-heading">{{ '_NAME' | translate }}</label>
+              <input type="text" class="form-control" id="name" required data-validation-required-message="Por favor introduce tu nombre.">
+              <p class="help-block text-danger"></p>
+            </div>
+            <div class="form-group col-lg-4">
+              <label class="text-heading">{{ '_EMAIL' | translate }}</label>
+              <input type="email" class="form-control" id="email" required data-validation-required-message="Por favor introduce tu dirección de correo.">
+              <p class="help-block text-danger"></p>
+            </div>
+            <div class="form-group col-lg-4">
+              <label class="text-heading">{{ '_PHONE_NUMBER' | translate }}</label>
+              <input type="tel" class="form-control" id="phone" required data-validation-required-message="Por favor introduce tu número de teléfono.">
+              <p class="help-block text-danger"></p>
+            </div>
+            <div class="clearfix"></div>
+            <div class="form-group col-lg-12">
+              <label class="text-heading">{{ '_MESSAGE' | translate }}</label>
+              <textarea class="form-control" rows="6" id="message" required data-validation-required-message="Por favor introduce un mensaje."></textarea>
+              <p class="help-block text-danger"></p>
+              <div id="success"></div>
+              <div class="form-group col-lg-12">
+                <button type="submit" class="btn btn-secondary">{{ '_SEND' | translate }}</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
   </section>
 
   <!--

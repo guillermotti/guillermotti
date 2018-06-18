@@ -13,7 +13,7 @@
     "_DXC_TIME": "Febrero 2017 - Actualidad",
     "_DXC_DESCRIPTION": "Web Technologies Team: Desarrollo de framework en AngularJS y Angular 2 para aplicaciones web. Desarrollo de aplicaciones web de front-end con AngularJS y Angular 2, framework propio y servicios REST. Proyecto OmniChannel.",
     "_DXC_JOB": "Application Developer Senior Assistant",
-    "_FREELANCE_DESCRIPTION": "Realización de páginas web y orientación a empresas en el universo web. Tecnologías usadas: Angular, Bootstrap, HTML5, CSS3, JavaScript, jQuery...",
+    "_FREELANCE_DESCRIPTION": "Realización de páginas web y orientación a empresas en el universo web. Tecnologías usadas: Angular, Bootstrap, HTML5, CSS3, JavaScript, jQuery, Node.js, Firebase, Sass, Express...",
     "_FREELANCE_DESCRIPTION2": "Algunos ejemplos:",    
     "_FREELANCE_TIME": "Julio 2016 - Actualidad",
     "_CSC_SCHOLARSHIP": "Becario de desarrollo de software",
@@ -71,5 +71,5 @@
     "_PHONE_NUMBER": "Número de teléfono",
     "_MESSAGE": "Mensaje",
     "_SEND": "Enviar",
-    "_CV": "Curriculum Vitae"    
+    "_CV": "Curriculum Vitae"
 }

@@ -1,9 +1,16 @@
-<div class="form-group">
-  <label class="languageSelect">
-    {{ '_LANGUAGE' | translate }}
-  </label>
-  <select #langSelect (change)="translate.use(langSelect.value)" class="languageSelectSelect">
-    <option *ngFor="let lang of translate.getLangs(); index as i" [value]="lang" [selected]="lang === translate.currentLang"
-      class="oc-language-option-{i}">{{ lang }}</option>
-  </select>
+<div class="row languageSelect">
+  <div class="imgTech col-xs-6 col-sm-6 col-md-6 col-lg-6">
+    <img
+      class="devicons svg"
+      src="./../img/spainFlag.svg"
+      (click)="selected('es')"
+    />
+  </div>
+  <div class="imgTech col-xs-6 col-sm-6 col-md-6 col-lg-6">
+    <img
+      class="devicons svg"
+      src="./../img/ukFlag.svg"
+      (click)="selected('en')"
+    />
+  </div>
 </div>

@@ -1,5 +1,3 @@
-<!--The content below is only a placeholder and can be replaced.-->
-
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
   <a class="navbar-brand js-scroll-trigger" href="#page-top">
     <span class="d-block d-lg-none">{{ '_MENU' | translate }}</span>
@@ -7,8 +5,8 @@
       <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="/img/profile.jpg" alt="">
     </span>
   </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-    aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -31,9 +29,6 @@
       <li class="nav-item">
         <a class="nav-link js-scroll-trigger" href="#contact">{{ '_CONTACT' | translate }}</a>
       </li>
-      <!--<li class="nav-item">
-        <a class="nav-link js-scroll-trigger" href="#awards">{{ '_AWARDS' | translate }}</a>
-      </li>-->
       <li class="nav-item">
         <language-select></language-select>
       </li>
@@ -119,7 +114,8 @@
       </ul>
       <br>
       <div class="col-lg-12 salicaria">
-        <button id="cvButton" class="btn btn-secondary greyColor" onclick="window.open('GuillermottiCV.pdf')">{{ '_CV' | translate }}</button>
+        <button id="cvButton" class="btn btn-secondary greyColor"
+          onclick="window.open('GuillermottiCV.pdf')">{{ '_CV' | translate }}</button>
       </div>
     </div>
   </section>
@@ -221,7 +217,6 @@
           <h3 class="mb-0">{{ '_UNIOVI' | translate }}</h3>
           <div class="subheading mb-3">{{ '_EPI' | translate }}</div>
           <div>{{ '_DEGREE' | translate }}</div>
-          <!-- <p>{{ '_UNIOVI_AVERAGE_SCORE' | translate }}</p> -->
         </div>
         <div class="resume-date text-md-right col-xs-3 col-sm-3 col-md-3 col-lg-3">
           <span class="text-primary">{{ '_UNIOVI_TIME' | translate }}</span>
@@ -262,49 +257,58 @@
 
         <div class="row">
           <i class="devicons devicon-apple-original colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
-          <ngb-progressbar type="success" [value]="90" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Mac OS X</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="90" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Mac OS X
+          </ngb-progressbar>
         </div>
         <div class="row">
           <i class="devicons devicon-windows8-original colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
-          <ngb-progressbar type="success" [value]="80" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Windows</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="80" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Windows
+          </ngb-progressbar>
         </div>
         <div class="row">
-          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">          
+          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
             <img class="devicons svg" src="./../img/linux.svg">
           </div>
-          <ngb-progressbar type="success" [value]="70" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Linux</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="70" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Linux
+          </ngb-progressbar>
         </div>
         <div class="row">
           <i class="devicon devicon-android-plain colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
-          <ngb-progressbar type="success" [value]="70" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Android</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="70" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Android
+          </ngb-progressbar>
         </div>
 
         <br>
         <div class="subheading mb-3">{{ '_FRAMEWORKS' | translate }}</div>
 
         <div class="row">
-          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">          
+          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
             <img class="devicons svg" src="./../img/angular.svg">
           </div>
-          <ngb-progressbar type="success" [value]="90" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Angular</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="90" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Angular
+          </ngb-progressbar>
         </div>
         <div class="row">
           <i class="devicons devicon-react-original colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
-          <ngb-progressbar type="success" [value]="50" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">React</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="50" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">React
+          </ngb-progressbar>
         </div>
         <div class="row">
           <i class="devicons devicon-vuejs-plain colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
-          <ngb-progressbar type="success" [value]="30" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Vue</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="30" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Vue
+          </ngb-progressbar>
         </div>
         <div class="row">
-          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">          
+          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
             <img class="devicons svg" src="./../img/ionic.png">
           </div>
-          <ngb-progressbar type="success" [value]="75" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Ionic</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="75" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Ionic
+          </ngb-progressbar>
         </div>
         <div class="row">
           <i class="devicons devicon-wordpress-plain colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
-          <ngb-progressbar type="success" [value]="60" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">WordPress</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="60" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">WordPress
+          </ngb-progressbar>
         </div>
 
         <br>
@@ -312,63 +316,75 @@
 
         <div class="row">
           <i class="devicons devicon-typescript-plain colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
-          <ngb-progressbar type="success" [value]="85" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">TypeScript</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="85" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">TypeScript
+          </ngb-progressbar>
         </div>
         <div class="row">
           <i class="devicons devicon-javascript-plain colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
-          <ngb-progressbar type="success" [value]="75" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">JavaScript</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="75" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">JavaScript
+          </ngb-progressbar>
         </div>
         <div class="row">
-          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">          
+          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
             <img class="devicons svg" src="./../img/java.svg">
           </div>
-          <ngb-progressbar type="success" [value]="60" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Java</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="60" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Java
+          </ngb-progressbar>
         </div>
         <div class="row">
-          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">          
+          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
             <img class="devicons svg" src="./../img/python.svg">
           </div>
-          <ngb-progressbar type="success" [value]="50" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Python</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="50" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Python
+          </ngb-progressbar>
         </div>
         <div class="row">
           <i class="devicon devicon-cplusplus-plain colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
-          <ngb-progressbar type="success" [value]="50" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">C++</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="50" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">C++
+          </ngb-progressbar>
         </div>
         <div class="row">
           <i class="devicon devicon-csharp-plain colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
-          <ngb-progressbar type="success" [value]="60" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">C#</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="60" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">C#
+          </ngb-progressbar>
         </div>
 
         <br>
         <div class="subheading mb-3">{{ '_WEB' | translate }}</div>
 
         <div class="row">
-          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">          
+          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
             <img class="devicons svg" src="./../img/html5.svg">
           </div>
-          <ngb-progressbar type="success" [value]="90" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">HTML5</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="90" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">HTML5
+          </ngb-progressbar>
         </div>
         <div class="row">
-          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">          
+          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
             <img class="devicons svg" src="./../img/css3.svg">
           </div>
-          <ngb-progressbar type="success" [value]="80" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">CSS3</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="80" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">CSS3
+          </ngb-progressbar>
         </div>
         <div class="row">
           <i class="devicons devicon-nodejs-plain colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
-          <ngb-progressbar type="success" [value]="80" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">NodeJS</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="80" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">NodeJS
+          </ngb-progressbar>
         </div>
         <div class="row">
           <i class="devicons devicon-sass-original colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
-          <ngb-progressbar type="success" [value]="60" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Sass</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="60" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Sass
+          </ngb-progressbar>
         </div>
         <div class="row">
           <i class="devicons devicon-bootstrap-plain colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
-          <ngb-progressbar type="success" [value]="80" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Bootstrap</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="80" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Bootstrap
+          </ngb-progressbar>
         </div>
         <div class="row">
           <i class="devicons devicon-jquery-plain colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
-          <ngb-progressbar type="success" [value]="70" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">jQuery</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="70" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">jQuery
+          </ngb-progressbar>
         </div>
 
         <br>
@@ -376,19 +392,22 @@
 
         <div class="row">
           <i class="devicons devicon-amazonwebservices-original colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
-          <ngb-progressbar type="success" [value]="60" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Amazon Web Services</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="60" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Amazon Web
+            Services</ngb-progressbar>
         </div>
         <div class="row">
-          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">          
+          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
             <img class="devicons svg" src="./../img/gcp.svg">
           </div>
-          <ngb-progressbar type="success" [value]="50" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Google Cloud Platform</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="50" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Google Cloud
+            Platform</ngb-progressbar>
         </div>
         <div class="row">
-          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">          
+          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
             <img class="devicons svg" src="./../img/firebase.svg">
           </div>
-          <ngb-progressbar type="success" [value]="75" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Firebase</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="75" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Firebase
+          </ngb-progressbar>
         </div>
 
         <br>
@@ -396,123 +415,143 @@
 
         <div class="row">
           <i class="devicon devicon-mysql-plain colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
-          <ngb-progressbar type="success" [value]="50" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">MySQL</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="50" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">MySQL
+          </ngb-progressbar>
         </div>
         <div class="row">
           <i class="devicon devicon-postgresql-plain colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
-          <ngb-progressbar type="success" [value]="55" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">PostgreSQL</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="55" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">PostgreSQL
+          </ngb-progressbar>
         </div>
         <div class="row">
           <i class="devicon devicon-oracle-original colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
-          <ngb-progressbar type="success" [value]="60" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Oracle</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="60" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Oracle
+          </ngb-progressbar>
         </div>
         <div class="row">
-          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">          
+          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
             <img class="devicons svg" src="./../img/mongodb.svg">
           </div>
-          <ngb-progressbar type="success" [value]="40" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">MongoDB</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="40" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">MongoDB
+          </ngb-progressbar>
         </div>
 
         <br>
         <div class="subheading mb-3">{{ '_CONFIG_TOOLS' | translate }}</div>
 
         <div class="row">
-          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">          
+          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
             <img class="devicons svg" src="./../img/jenkins.png">
           </div>
-          <ngb-progressbar type="success" [value]="80" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Jenkins</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="80" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Jenkins
+          </ngb-progressbar>
         </div>
         <div class="row">
-          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">          
+          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
             <img class="devicons svg" src="./../img/docker.svg">
           </div>
-          <ngb-progressbar type="success" [value]="60" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Docker</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="60" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Docker
+          </ngb-progressbar>
         </div>
         <div class="row">
-          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">          
+          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
             <img class="devicons svg" src="./../img/circleci.png">
           </div>
-          <ngb-progressbar type="success" [value]="50" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">CircleCI</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="50" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">CircleCI
+          </ngb-progressbar>
         </div>
         <div class="row">
-          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">          
+          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
             <img class="devicons svg" src="./../img/artifactory.png">
           </div>
-          <ngb-progressbar type="success" [value]="70" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Artifactory</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="70" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Artifactory
+          </ngb-progressbar>
         </div>
         <div class="row">
-          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">          
+          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
             <img class="devicons svg" src="./../img/terraform.svg">
           </div>
-          <ngb-progressbar type="success" [value]="70" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Terraform</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="70" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Terraform
+          </ngb-progressbar>
         </div>
         <div class="row">
-          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">          
+          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
             <img class="devicons svg" src="./../img/npm.svg">
           </div>
-          <ngb-progressbar type="success" [value]="90" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">npm</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="90" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">npm
+          </ngb-progressbar>
         </div>
         <div class="row">
-          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">          
+          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
             <img class="devicons svg" src="./../img/yarn.svg">
           </div>
-          <ngb-progressbar type="success" [value]="70" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Yarn</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="70" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Yarn
+          </ngb-progressbar>
         </div>
         <div class="row">
-          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">          
+          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
             <img class="devicons svg" src="./../img/bower.svg">
           </div>
-          <ngb-progressbar type="success" [value]="70" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Bower</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="70" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Bower
+          </ngb-progressbar>
         </div>
         <div class="row">
-          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">          
+          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
             <img class="devicons svg" src="./../img/grunt.svg">
           </div>
-          <ngb-progressbar type="success" [value]="60" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Grunt</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="60" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Grunt
+          </ngb-progressbar>
         </div>
         <div class="row">
           <i class="devicons devicon-gulp-plain colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
-          <ngb-progressbar type="success" [value]="50" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Gulp</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="50" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Gulp
+          </ngb-progressbar>
         </div>
 
         <br>
         <div class="subheading mb-3">{{ '_IDES' | translate }}</div>
 
         <div class="row">
-          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">          
+          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
             <img class="devicons svg" src="./../img/visualstudiocode.png">
           </div>
-          <ngb-progressbar type="success" [value]="90" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Visual Studio Code</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="90" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Visual Studio
+            Code</ngb-progressbar>
         </div>
         <div class="row">
-          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">          
+          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
             <img class="devicons svg" src="./../img/visualstudio.svg">
           </div>
-          <ngb-progressbar type="success" [value]="60" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Visual Studio</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="60" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Visual Studio
+          </ngb-progressbar>
         </div>
         <div class="row">
-          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">          
+          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
             <img class="devicons svg" src="./../img/sublime.svg">
           </div>
-          <ngb-progressbar type="success" [value]="80" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Sublime Text</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="80" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Sublime Text
+          </ngb-progressbar>
         </div>
         <div class="row">
-          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">          
+          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
             <img class="devicons svg" src="./../img/eclipse.png">
           </div>
-          <ngb-progressbar type="success" [value]="50" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Eclipse</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="50" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Eclipse
+          </ngb-progressbar>
         </div>
         <div class="row">
-          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">          
+          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
             <img class="devicons svg" src="./../img/netbeans.png">
           </div>
-          <ngb-progressbar type="success" [value]="40" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Netbeans</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="40" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Netbeans
+          </ngb-progressbar>
         </div>
         <div class="row">
-          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">          
+          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
             <img class="devicons svg jetbrains" src="./../img/jetbrains.png">
           </div>
-          <ngb-progressbar type="success" [value]="50" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">JetBrains</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="50" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">JetBrains
+          </ngb-progressbar>
         </div>
 
         <br>
@@ -520,33 +559,38 @@
 
         <div class="row">
           <i class="devicons devicon-github-plain colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
-          <ngb-progressbar type="success" [value]="90" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">GitHub</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="90" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">GitHub
+          </ngb-progressbar>
         </div>
         <div class="row">
           <i class="devicons devicon-bitbucket-plain colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
-          <ngb-progressbar type="success" [value]="80" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">BitBucket</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="80" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">BitBucket
+          </ngb-progressbar>
         </div>
         <div class="row">
-          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">          
+          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
             <img class="devicons svg" src="./../img/gitlab.svg">
           </div>
-          <ngb-progressbar type="success" [value]="50" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">GitLab</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="50" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">GitLab
+          </ngb-progressbar>
         </div>
 
         <br>
         <div class="subheading mb-3">{{ '_SCRUM' | translate }}</div>
 
         <div class="row">
-          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">          
+          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
             <img class="devicons svg" src="./../img/jira.png">
           </div>
-          <ngb-progressbar type="success" [value]="70" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Jira</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="70" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Jira
+          </ngb-progressbar>
         </div>
         <div class="row">
-          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">          
+          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
             <img class="devicons svg" src="./../img/trello.png">
           </div>
-          <ngb-progressbar type="success" [value]="80" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Trello</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="80" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Trello
+          </ngb-progressbar>
         </div>
 
         <br>
@@ -554,21 +598,17 @@
 
         <div class="row">
           <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
-            <img
-              class="devicons svg flags"
-              src="./../img/spainFlag.svg"
-            />
+            <img class="devicons svg flags" src="./../img/spainFlag.svg" />
           </div>
-          <ngb-progressbar type="success" [value]="100" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">{{ '_SPANISH' | translate }}</ngb-progressbar>
+          <ngb-progressbar type="success" [value]="100" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+            {{ '_SPANISH' | translate }}</ngb-progressbar>
         </div>
         <div class="row">
           <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
-            <img
-              class="devicons svg flags"
-              src="./../img/ukFlag.svg"
-            />
-          </div>          
-          <ngb-progressbar type="success" [value]="70" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">{{ '_ENGLISH' | translate }}</ngb-progressbar>
+            <img class="devicons svg flags" src="./../img/ukFlag.svg" />
+          </div>
+          <ngb-progressbar type="success" [value]="70" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+            {{ '_ENGLISH' | translate }}</ngb-progressbar>
         </div>
       </div>
       <br>
@@ -751,28 +791,31 @@
         <br>
         <p>{{ '_GET_IN_TOUCH_MESSAGE' | translate }}</p>
         <br>
-        <hr class="divider">
         <form name="sentMessage" id="contactForm" novalidate>
           <div class="row">
             <div class="form-group col-lg-4">
               <label class="text-heading">{{ '_NAME' | translate }}</label>
-              <input type="text" class="form-control" id="name" required data-validation-required-message="Por favor introduce tu nombre.">
+              <input type="text" class="form-control" id="name" required
+                data-validation-required-message="Por favor introduce tu nombre.">
               <p class="help-block text-danger"></p>
             </div>
             <div class="form-group col-lg-4">
               <label class="text-heading">{{ '_EMAIL' | translate }}</label>
-              <input type="email" class="form-control" id="email" required data-validation-required-message="Por favor introduce tu dirección de correo.">
+              <input type="email" class="form-control" id="email" required
+                data-validation-required-message="Por favor introduce tu dirección de correo.">
               <p class="help-block text-danger"></p>
             </div>
             <div class="form-group col-lg-4">
               <label class="text-heading">{{ '_PHONE_NUMBER' | translate }}</label>
-              <input type="tel" class="form-control" id="phone" required data-validation-required-message="Por favor introduce tu número de teléfono.">
+              <input type="tel" class="form-control" id="phone" required
+                data-validation-required-message="Por favor introduce tu número de teléfono.">
               <p class="help-block text-danger"></p>
             </div>
             <div class="clearfix"></div>
             <div class="form-group col-lg-12">
               <label class="text-heading">{{ '_MESSAGE' | translate }}</label>
-              <textarea class="form-control" rows="6" id="message" required data-validation-required-message="Por favor introduce un mensaje."></textarea>
+              <textarea class="form-control" rows="6" id="message" required
+                data-validation-required-message="Por favor introduce un mensaje."></textarea>
               <p class="help-block text-danger"></p>
               <div id="success"></div>
               <div class="form-group col-lg-12">
@@ -784,46 +827,4 @@
       </div>
     </div>
   </section>
-
-  <!--
-  <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
-    <div class="my-auto">
-      <h2 class="mb-5">Awards &amp; Certifications</h2>
-      <ul class="fa-ul mb-0">
-        <li>
-          <i class="fa-li fa fa-trophy text-warning"></i>
-          Google Analytics Certified Developer</li>
-        <li>
-          <i class="fa-li fa fa-trophy text-warning"></i>
-          Mobile Web Specialist - Google Certification</li>
-        <li>
-          <i class="fa-li fa fa-trophy text-warning"></i>
-          1
-          <sup>st</sup>
-          Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
-        <li>
-          <i class="fa-li fa fa-trophy text-warning"></i>
-          1
-          <sup>st</sup>
-          Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
-        <li>
-          <i class="fa-li fa fa-trophy text-warning"></i>
-          2
-          <sup>nd</sup>
-          Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
-        <li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1
-            <sup>st</sup>
-            Place - James Buchanan High School - Hackathon 2006</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            3
-            <sup>rd</sup>
-            Place - James Buchanan High School - Hackathon 2005</li>
-      </ul>
-    </div>
-  </section>-->
-
 </div>

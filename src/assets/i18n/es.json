@@ -16,7 +16,7 @@
   "_DXC_JOB": "Application Developer - DevOps - Cloud Developer",
   "_FREELANCE_DESCRIPTION": "Realización de aplicaciones móvil y web, orientación a negocios en el universo web. Plataformas: Google Cloud Platform, Google Marketing Platform. Tecnologías: Angular, Ionic, Bootstrap, HTML5, CSS3, JavaScript, jQuery, Node.js, Firebase, Sass, Bitbucket, GitHub, Google Analytics...",
   "_FREELANCE_DESCRIPTION2": "Algunos ejemplos:",
-  "_FREELANCE_TIME": "Julio 2016 - Actualidad",
+  "_FREELANCE_TIME": "Julio 2016 - Septiembre 2019",
   "_CSC_SCHOLARSHIP": "Becario de desarrollo de software",
   "_CSC": "CSC - Computer Science Corporation",
   "_CSC_DESCRIPTION": "Desarrollo de Software en equipo Java: Desarrollo de aplicación web en JavaScript y AngularJS en el front-end. Proyecto OmniChannel.",
@@ -75,5 +75,8 @@
   "_MESSAGE": "Mensaje",
   "_SEND": "Enviar",
   "_CV": "Curriculum Vitae",
-  "_AUTOMATION": "Automatización de procesos recurrentes para aumentar productividad y evitar fallos"
+  "_AUTOMATION": "Automatización de procesos recurrentes para aumentar productividad y evitar fallos",
+  "_EMPATHY_JOB": "Ingeniero DevOps",
+  "_EMPATHY_DESCRIPTION": "Desarrollo y Operaciones con desarrollo continuo, integración continua y despliegue continuo (CI/CD). Infraestructura en la nube usando Terraform con Amazon Web Services y Google Cloud Platform. Monitorización y logging. Tecnologías: Jenkins, Nexus, Bitbucket, Node.js, Python, Prometheus, Grafana, Kibana, Go, Typescript, Consul...",
+  "_EMPATHY_TIME": "September 2019 - Present"
 }

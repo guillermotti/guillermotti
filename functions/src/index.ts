@@ -28,12 +28,15 @@ recaptcha.use(bodyParser.json());
 recaptcha.use(cors());
 
 recaptcha.post('/validate', (req: any, res: any) => {
+  console.log('Req: ' + req);
+  console.log('Req.body: ' + req.body);
   const token = req.body.recaptcha;
+  console.log('Token: ' + token);
   const secretKey = "6LcWV-AUAAAAAE5bB58PDPuXqOrizmAFJRcVTHWO"; //the secret key from your google admin console;
 
+  console.log('Remote Address: ' + req.connection.remoteAddress);
   //token validation url is URL: https://www.google.com/recaptcha/api/siteverify 
   // METHOD used is: POST
-
   const url = `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${token}&remoteip=${req.connection.remoteAddress}`
 
   //note that remoteip is the users ip address and it is optional

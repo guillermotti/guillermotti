@@ -57,3 +57,4 @@ recaptcha.post('/recaptcha', (req: any, res: any) => {
 });
 
 exports.email = functions.https.onRequest(email);
+exports.recaptcha = functions.https.onRequest(recaptcha);

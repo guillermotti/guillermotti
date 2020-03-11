@@ -27,7 +27,7 @@ const recaptcha = express();
 recaptcha.use(bodyParser.json());
 recaptcha.use(cors());
 
-recaptcha.post('/recaptcha', (req: any, res: any) => {
+recaptcha.post('/validate', (req: any, res: any) => {
   const token = req.body.recaptcha;
   const secretKey = "6LcWV-AUAAAAAE5bB58PDPuXqOrizmAFJRcVTHWO"; //the secret key from your google admin console;
 

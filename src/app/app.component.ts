@@ -93,7 +93,7 @@ export class AppComponent implements OnInit {
   //function to resolve the reCaptcha and retrieve a token
   async resolved(captchaResponse: string) {
     console.log(`Resolved response token: ${captchaResponse}`);
-    this.http.post("https://us-central1-guillermotti.cloudfunctions.net/email/recaptcha", {recaptcha: captchaResponse}).subscribe(res => {
+    this.http.post("https://us-central1-guillermotti.cloudfunctions.net/recaptcha/validate", {recaptcha: captchaResponse}).subscribe(res => {
       if (res) {
         this.recaptcha = true;
       }

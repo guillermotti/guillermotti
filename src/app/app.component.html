@@ -47,14 +47,16 @@
         <span class="text-primary">Rodríguez</span>
       </h1>
       <div class="subheading mb-5">
-        <i class="fa fa-location-arrow" aria-hidden="true" style="margin-right: 5px;"></i>&nbsp;
-        {{ '_ADDRESS' | translate }}
-        <br>
-        <i class="fa fa-mobile" aria-hidden="true" style="margin-right: 5px; margin-left: 5px;"></i>&nbsp;
-        (+34) 634 561 629
-        <br>
-        <i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;
-        <a href="mailto:guillermovigilr@gmail.com">guillermovigilr@gmail.com</a>
+
+        <p>
+          <mat-icon>location_on</mat-icon>{{ '_ADDRESS' | translate }}
+        </p>
+        <p>
+          <mat-icon>phone_iphone</mat-icon>(+34) 634 561 629
+        </p>
+        <p>
+          <mat-icon>mail</mat-icon><a href="mailto:guillermovigilr@gmail.com">guillermovigilr@gmail.com</a>
+        </p>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <p class="mb-5">{{ '_DESCRIPTION' | translate }}</p>
@@ -64,34 +66,10 @@
       </div>
       <ul class="list-inline list-social-icons mb-5">
         <li class="list-inline-item">
-          <a href="https://www.facebook.com/guillermotti">
+          <a href="https://github.com/guillermotti">
             <span class="fa-stack fa-lg">
               <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-            </span>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a href="https://twitter.com/GuillermoVigil">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-            </span>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a href="https://www.instagram.com/guillermotti/">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-            </span>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a href="https://open.spotify.com/user/212losfkqce46ku5l66leqazy">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-spotify fa-stack-1x fa-inverse"></i>
+              <i class="fa fa-github fa-stack-1x fa-inverse"></i>
             </span>
           </a>
         </li>
@@ -104,18 +82,44 @@
           </a>
         </li>
         <li class="list-inline-item">
-          <a href="https://github.com/guillermotti">
+          <a href="https://twitter.com/GuillermoVigil">
             <span class="fa-stack fa-lg">
               <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+              <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://open.spotify.com/user/212losfkqce46ku5l66leqazy">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-spotify fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://www.instagram.com/guillermotti/">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://www.facebook.com/guillermotti">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
             </span>
           </a>
         </li>
       </ul>
       <br>
-      <div class="col-lg-12 salicaria">
-        <button id="cvButton" class="btn btn-secondary greyColor"
-          onclick="window.open('GuillermottiCV.pdf')">{{ '_CV' | translate }}</button>
+      <div class="col-lg-12 item-center">
+        <button mat-raised-button id="cvButton" class="btn btn-secondary cv-button"
+          onclick="window.open('GuillermottiCV.pdf')">
+          {{ '_CV' | translate }} <mat-icon>cloud_download</mat-icon>
+        </button>
       </div>
     </div>
   </section>
@@ -253,32 +257,125 @@
 
       <div class="list-icons">
 
-        <div class="subheading mb-3">{{ '_OS' | translate }}</div>
+        <div class="subheading mb-3">{{ '_CLOUD' | translate }}</div>
 
         <div class="row">
-          <i class="devicons devicon-apple-original colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
-          <ngb-progressbar type="success" [value]="90" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Mac OS X
-          </ngb-progressbar>
+          <i class="devicons devicon-amazonwebservices-original colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
+          <ngb-progressbar type="success" [value]="70" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Amazon Web
+            Services</ngb-progressbar>
         </div>
         <div class="row">
-          <i class="devicons devicon-windows8-original colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
-          <ngb-progressbar type="success" [value]="80" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Windows
+          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <img class="devicons svg" src="./../img/gcp.svg">
+          </div>
+          <ngb-progressbar type="success" [value]="80" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Google Cloud
+            Platform</ngb-progressbar>
+        </div>
+        <div class="row">
+          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <img class="devicons svg" src="./../img/firebase.svg">
+          </div>
+          <ngb-progressbar type="success" [value]="90" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Firebase
           </ngb-progressbar>
         </div>
         <div class="row">
           <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
-            <img class="devicons svg" src="./../img/linux.svg">
+            <img class="devicons svg" src="./../img/terraform.svg">
           </div>
-          <ngb-progressbar type="success" [value]="70" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Linux
+          <ngb-progressbar type="success" [value]="60" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Terraform
           </ngb-progressbar>
         </div>
         <div class="row">
-          <i class="devicon devicon-android-plain colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
-          <ngb-progressbar type="success" [value]="70" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Android
+          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <img class="devicons svg" src="./../img/kubernetes.png">
+          </div>
+          <ngb-progressbar type="success" [value]="65" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Kubernetes
+          </ngb-progressbar>
+        </div>
+        <div class="row">
+          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2 rancher">
+            <img class="devicons svg" src="./../img/rancher.svg">
+          </div>
+          <ngb-progressbar type="success" [value]="70" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Rancher
+          </ngb-progressbar>
+        </div>
+        <div class="row">
+          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <img class="devicons svg" src="./../img/docker.svg">
+          </div>
+          <ngb-progressbar type="success" [value]="60" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Docker
+          </ngb-progressbar>
+        </div>
+        <div class="row">
+          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <img class="devicons svg" src="./../img/artifactory.png">
+          </div>
+          <ngb-progressbar type="success" [value]="70" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Artifactory
+          </ngb-progressbar>
+        </div>
+        <div class="row">
+          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <img class="devicons svg" src="./../img/nexus.png">
+          </div>
+          <ngb-progressbar type="success" [value]="60" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Nexus
+          </ngb-progressbar>
+        </div>
+        <br>
+
+        <div class="subheading mb-3">CI/CD</div>
+
+        <div class="row">
+          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <img class="devicons svg" src="./../img/jenkins.png">
+          </div>
+          <ngb-progressbar type="success" [value]="80" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Jenkins
+          </ngb-progressbar>
+        </div>
+        <div class="row">
+          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <img class="devicons svg" src="./../img/circleci.png">
+          </div>
+          <ngb-progressbar type="success" [value]="60" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">CircleCI
+          </ngb-progressbar>
+        </div>
+        <div class="row">
+          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <img class="devicons svg" src="./../img/argocd.png">
+          </div>
+          <ngb-progressbar type="success" [value]="50" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Argo
+          </ngb-progressbar>
+        </div>
+        <div class="row">
+          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <img class="devicons svg" src="./../img/spinnaker.svg">
+          </div>
+          <ngb-progressbar type="success" [value]="60" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Spinnaker
           </ngb-progressbar>
         </div>
 
+
         <br>
+        <div class="subheading mb-3">{{ '_CONTROL' | translate }}</div>
+
+        <div class="row">
+          <i class="devicons devicon-github-plain colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
+          <ngb-progressbar type="success" [value]="90" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">GitHub
+          </ngb-progressbar>
+        </div>
+        <div class="row">
+          <i class="devicons devicon-bitbucket-plain colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
+          <ngb-progressbar type="success" [value]="80" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">BitBucket
+          </ngb-progressbar>
+        </div>
+        <div class="row">
+          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <img class="devicons svg" src="./../img/gitlab.svg">
+          </div>
+          <ngb-progressbar type="success" [value]="50" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">GitLab
+          </ngb-progressbar>
+        </div>
+        <br>
+
         <div class="subheading mb-3">{{ '_FRAMEWORKS' | translate }}</div>
 
         <div class="row">
@@ -308,44 +405,6 @@
         <div class="row">
           <i class="devicons devicon-wordpress-plain colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
           <ngb-progressbar type="success" [value]="60" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">WordPress
-          </ngb-progressbar>
-        </div>
-
-        <br>
-        <div class="subheading mb-3">{{ '_PROGRAMMING_LANGUAGES' | translate }}</div>
-
-        <div class="row">
-          <i class="devicons devicon-typescript-plain colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
-          <ngb-progressbar type="success" [value]="85" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">TypeScript
-          </ngb-progressbar>
-        </div>
-        <div class="row">
-          <i class="devicons devicon-javascript-plain colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
-          <ngb-progressbar type="success" [value]="75" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">JavaScript
-          </ngb-progressbar>
-        </div>
-        <div class="row">
-          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
-            <img class="devicons svg" src="./../img/java.svg">
-          </div>
-          <ngb-progressbar type="success" [value]="60" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Java
-          </ngb-progressbar>
-        </div>
-        <div class="row">
-          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
-            <img class="devicons svg" src="./../img/python.svg">
-          </div>
-          <ngb-progressbar type="success" [value]="50" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Python
-          </ngb-progressbar>
-        </div>
-        <div class="row">
-          <i class="devicon devicon-cplusplus-plain colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
-          <ngb-progressbar type="success" [value]="50" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">C++
-          </ngb-progressbar>
-        </div>
-        <div class="row">
-          <i class="devicon devicon-csharp-plain colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
-          <ngb-progressbar type="success" [value]="60" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">C#
           </ngb-progressbar>
         </div>
 
@@ -388,92 +447,53 @@
         </div>
 
         <br>
-        <div class="subheading mb-3">{{ '_CLOUD' | translate }}</div>
+        <div class="subheading mb-3">{{ '_PROGRAMMING_LANGUAGES' | translate }}</div>
 
         <div class="row">
-          <i class="devicons devicon-amazonwebservices-original colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
-          <ngb-progressbar type="success" [value]="60" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Amazon Web
-            Services</ngb-progressbar>
-        </div>
-        <div class="row">
-          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
-            <img class="devicons svg" src="./../img/gcp.svg">
-          </div>
-          <ngb-progressbar type="success" [value]="50" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Google Cloud
-            Platform</ngb-progressbar>
-        </div>
-        <div class="row">
-          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
-            <img class="devicons svg" src="./../img/firebase.svg">
-          </div>
-          <ngb-progressbar type="success" [value]="75" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Firebase
-          </ngb-progressbar>
-        </div>
-
-        <br>
-        <div class="subheading mb-3">{{ '_DATABASES' | translate }}</div>
-
-        <div class="row">
-          <i class="devicon devicon-mysql-plain colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
-          <ngb-progressbar type="success" [value]="50" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">MySQL
+          <i class="devicons devicon-typescript-plain colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
+          <ngb-progressbar type="success" [value]="85" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">TypeScript
           </ngb-progressbar>
         </div>
         <div class="row">
-          <i class="devicon devicon-postgresql-plain colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
-          <ngb-progressbar type="success" [value]="55" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">PostgreSQL
-          </ngb-progressbar>
-        </div>
-        <div class="row">
-          <i class="devicon devicon-oracle-original colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
-          <ngb-progressbar type="success" [value]="60" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Oracle
+          <i class="devicons devicon-javascript-plain colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
+          <ngb-progressbar type="success" [value]="75" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">JavaScript
           </ngb-progressbar>
         </div>
         <div class="row">
           <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
-            <img class="devicons svg" src="./../img/mongodb.svg">
+            <img class="devicons svg" src="./../img/java.svg">
           </div>
-          <ngb-progressbar type="success" [value]="40" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">MongoDB
+          <ngb-progressbar type="success" [value]="60" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Java
+          </ngb-progressbar>
+        </div>
+        <div class="row">
+          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <img class="devicons svg" src="./../img/python.svg">
+          </div>
+          <ngb-progressbar type="success" [value]="50" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Python
+          </ngb-progressbar>
+        </div>
+        <div class="row">
+          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <img class="devicons svg" src="./../img/golang.png">
+          </div>
+          <ngb-progressbar type="success" [value]="40" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Go
+          </ngb-progressbar>
+        </div>
+        <div class="row">
+          <i class="devicon devicon-cplusplus-plain colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
+          <ngb-progressbar type="success" [value]="50" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">C++
+          </ngb-progressbar>
+        </div>
+        <div class="row">
+          <i class="devicon devicon-csharp-plain colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
+          <ngb-progressbar type="success" [value]="60" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">C#
           </ngb-progressbar>
         </div>
 
         <br>
         <div class="subheading mb-3">{{ '_CONFIG_TOOLS' | translate }}</div>
 
-        <div class="row">
-          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
-            <img class="devicons svg" src="./../img/jenkins.png">
-          </div>
-          <ngb-progressbar type="success" [value]="80" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Jenkins
-          </ngb-progressbar>
-        </div>
-        <div class="row">
-          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
-            <img class="devicons svg" src="./../img/docker.svg">
-          </div>
-          <ngb-progressbar type="success" [value]="60" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Docker
-          </ngb-progressbar>
-        </div>
-        <div class="row">
-          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
-            <img class="devicons svg" src="./../img/circleci.png">
-          </div>
-          <ngb-progressbar type="success" [value]="50" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">CircleCI
-          </ngb-progressbar>
-        </div>
-        <div class="row">
-          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
-            <img class="devicons svg" src="./../img/artifactory.png">
-          </div>
-          <ngb-progressbar type="success" [value]="70" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Artifactory
-          </ngb-progressbar>
-        </div>
-        <div class="row">
-          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
-            <img class="devicons svg" src="./../img/terraform.svg">
-          </div>
-          <ngb-progressbar type="success" [value]="70" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Terraform
-          </ngb-progressbar>
-        </div>
         <div class="row">
           <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
             <img class="devicons svg" src="./../img/npm.svg">
@@ -505,6 +525,32 @@
         <div class="row">
           <i class="devicons devicon-gulp-plain colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
           <ngb-progressbar type="success" [value]="50" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Gulp
+          </ngb-progressbar>
+        </div>
+
+        <br>
+        <div class="subheading mb-3">{{ '_DATABASES' | translate }}</div>
+
+        <div class="row">
+          <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <img class="devicons svg" src="./../img/mongodb.svg">
+          </div>
+          <ngb-progressbar type="success" [value]="70" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">MongoDB
+          </ngb-progressbar>
+        </div>
+        <div class="row">
+          <i class="devicon devicon-mysql-plain colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
+          <ngb-progressbar type="success" [value]="50" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">MySQL
+          </ngb-progressbar>
+        </div>
+        <div class="row">
+          <i class="devicon devicon-postgresql-plain colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
+          <ngb-progressbar type="success" [value]="55" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">PostgreSQL
+          </ngb-progressbar>
+        </div>
+        <div class="row">
+          <i class="devicon devicon-oracle-original colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
+          <ngb-progressbar type="success" [value]="60" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Oracle
           </ngb-progressbar>
         </div>
 
@@ -555,23 +601,28 @@
         </div>
 
         <br>
-        <div class="subheading mb-3">{{ '_CONTROL' | translate }}</div>
+        <div class="subheading mb-3">{{ '_OS' | translate }}</div>
 
         <div class="row">
-          <i class="devicons devicon-github-plain colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
-          <ngb-progressbar type="success" [value]="90" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">GitHub
+          <i class="devicons devicon-apple-original colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
+          <ngb-progressbar type="success" [value]="90" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Mac OS X
           </ngb-progressbar>
         </div>
         <div class="row">
-          <i class="devicons devicon-bitbucket-plain colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
-          <ngb-progressbar type="success" [value]="80" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">BitBucket
+          <i class="devicons devicon-windows8-original colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
+          <ngb-progressbar type="success" [value]="80" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Windows
           </ngb-progressbar>
         </div>
         <div class="row">
           <div class="imgTech col-xs-2 col-sm-2 col-md-2 col-lg-2">
-            <img class="devicons svg" src="./../img/gitlab.svg">
+            <img class="devicons svg" src="./../img/linux.svg">
           </div>
-          <ngb-progressbar type="success" [value]="50" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">GitLab
+          <ngb-progressbar type="success" [value]="70" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Linux
+          </ngb-progressbar>
+        </div>
+        <div class="row">
+          <i class="devicon devicon-android-plain colored col-xs-2 col-sm-2 col-md-2 col-lg-2"></i>
+          <ngb-progressbar type="success" [value]="70" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">Android
           </ngb-progressbar>
         </div>
 
@@ -612,31 +663,6 @@
         </div>
       </div>
       <br>
-      <br>
-      <div class="subheading mb-3">{{ '_WORKFLOW' | translate }}</div>
-      <ul class="fa-ul mb-0">
-        <li>
-          <i class="fa-li fa fa-check"></i>
-          {{ '_TEAMWORK' | translate }}</li>
-        <li>
-          <i class="fa-li fa fa-check"></i>
-          {{ '_VERSION_CONTROL' | translate }}</li>
-        <li>
-          <i class="fa-li fa fa-check"></i>
-          {{ '_GIT_WORKFLOW' | translate }}</li>
-        <li>
-          <i class="fa-li fa fa-check"></i>
-          {{ '_AUTOMATION' | translate }}</li>
-        <li>
-          <i class="fa-li fa fa-check"></i>
-          {{ '_BROWSER_TESTING' | translate }} &amp; {{ '_DEBUGGING' | translate }}</li>
-        <li>
-          <i class="fa-li fa fa-check"></i>
-          {{ '_AGILE_DEVELOPMENT' | translate }} &amp; {{ '_SCRUM' | translate }}</li>
-        <li>
-          <i class="fa-li fa fa-check"></i>
-          {{ '_MOBILE_RESPONSIVE' | translate }}</li>
-      </ul>
     </div>
   </section>
 
@@ -787,40 +813,57 @@
       <h2 class="mb-5">{{ '_CONTACT' | translate }}</h2>
 
       <div class="bg-faded p-4 my-4">
-        <h3 class="mb-0 salicaria">{{ '_GET_IN_TOUCH' | translate }}</h3>
+        <h3 class="mb-0 item-center">{{ '_GET_IN_TOUCH' | translate }}</h3>
         <br>
         <p>{{ '_GET_IN_TOUCH_MESSAGE' | translate }}</p>
         <br>
         <form name="sentMessage" id="contactForm" novalidate>
           <div class="row">
-            <div class="form-group col-lg-4">
-              <label class="text-heading">{{ '_NAME' | translate }}</label>
-              <input type="text" class="form-control" id="name" required
-                data-validation-required-message="Por favor introduce tu nombre.">
-              <p class="help-block text-danger"></p>
+            <div class="col-lg-4">
+              <mat-form-field class="full-width" appearance="outline">
+                <mat-label>{{ '_NAME' | translate }}</mat-label>
+                <mat-icon matSuffix>person</mat-icon>
+                <input matInput required [(ngModel)]="name" name="name">
+              </mat-form-field>
             </div>
-            <div class="form-group col-lg-4">
-              <label class="text-heading">{{ '_EMAIL' | translate }}</label>
-              <input type="email" class="form-control" id="email" required
-                data-validation-required-message="Por favor introduce tu dirección de correo.">
-              <p class="help-block text-danger"></p>
+            <div class="col-lg-4">
+              <mat-form-field class="full-width" appearance="outline">
+                <mat-icon matSuffix>email</mat-icon>
+                <mat-label>{{ '_EMAIL' | translate }}</mat-label>
+                <input matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher" required
+                  [(ngModel)]="email" name="email" placeholder="Ex. pat@example.com">
+                <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                  {{ '_EMAIL_ERROR' | translate }}
+                </mat-error>
+              </mat-form-field>
             </div>
-            <div class="form-group col-lg-4">
-              <label class="text-heading">{{ '_PHONE_NUMBER' | translate }}</label>
-              <input type="tel" class="form-control" id="phone" required
-                data-validation-required-message="Por favor introduce tu número de teléfono.">
-              <p class="help-block text-danger"></p>
+            <div class="col-lg-4">
+              <mat-form-field class="full-width" appearance="outline">
+                <mat-label>{{ '_PHONE_NUMBER' | translate }}</mat-label>
+                <mat-icon matSuffix>phone</mat-icon>
+                <input matInput type="tel" required [(ngModel)]="phone" name="phone">
+              </mat-form-field>
             </div>
-            <div class="clearfix"></div>
-            <div class="form-group col-lg-12">
-              <label class="text-heading">{{ '_MESSAGE' | translate }}</label>
-              <textarea class="form-control" rows="6" id="message" required
-                data-validation-required-message="Por favor introduce un mensaje."></textarea>
-              <p class="help-block text-danger"></p>
-              <div id="success"></div>
-              <div class="form-group col-lg-12">
-                <button type="submit" class="btn btn-secondary">{{ '_SEND' | translate }}</button>
-              </div>
+            <div class="col-lg-12">
+              <mat-form-field class="full-width" appearance="outline">
+                <mat-label>{{ '_MESSAGE' | translate }}</mat-label>
+                <mat-icon matSuffix>message</mat-icon>
+                <textarea matInput required matTextareaAutosize matAutosizeMinRows="2" [(ngModel)]="message"
+                  name="message"></textarea>
+              </mat-form-field>
+            </div>
+            <div class="col-lg-12">
+              <!-- 
+                the SITE_KEY is the sitekey from your admin console.
+                use form control for validation
+              -->
+              <re-captcha (resolved)="resolved($event)" siteKey="6LcWV-AUAAAAAHwAwKRq1Bz09ombJTk9R-NiALUZ">
+              </re-captcha>
+            </div>
+
+            <div class="col-lg-12 item-center">
+              <button mat-raised-button color="primary" (click)="sendEmail()"
+                [disabled]="buttonDisabled()">{{ '_SEND' | translate }} <mat-icon>send</mat-icon></button>
             </div>
           </div>
         </form>

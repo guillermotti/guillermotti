@@ -1,15 +1,122 @@
 /* You can add global styles to this file, and also import other style files */
-@import "../../node_modules/bootstrap/scss/bootstrap";
+
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$candy-app-primary: mat-palette($mat-indigo);
+$candy-app-accent:  mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$candy-app-warn:    mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-app-warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($candy-app-theme);
+
+$green-palette: (
+    50 : #e6f0e9,
+    100 : #c1d8c7,
+    200 : #98bfa2,
+    300 : #6fa57c,
+    400 : #509160,
+    500 : #317e44,
+    600 : #2c763e,
+    700 : #256b35,
+    800 : #1f612d,
+    900 : #134e1f,
+    A100 : #89ff9d,
+    A200 : #56ff73,
+    A400 : #23ff48,
+    A700 : #09ff33,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$gray-palette: (
+    50 : #e7e7e8,
+    100 : #c2c4c6,
+    200 : #9a9da0,
+    300 : #717579,
+    400 : #52585d,
+    500 : #343a40,
+    600 : #2f343a,
+    700 : #272c32,
+    800 : #21252a,
+    900 : #15181c,
+    A100 : #63b1ff,
+    A200 : #3097ff,
+    A400 : #007efc,
+    A700 : #0071e2,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+$custom-theme: mat-light-theme(mat-palette($green-palette), mat-palette($gray-palette));
+@include angular-material-theme($custom-theme);
 
 @font-face {
-    font-family: LearningCurve;
-    src: url(../assets/LearningCurve.ttf);
+    font-family: Monoton;
+    src: url(../assets/Monoton-Regular.ttf);
+}
+
+@font-face {
+    font-family: Nintendo;
+    src: url(../assets/PressStart2P-Regular.ttf);
+}
+
+@font-face {
+    font-family: Bungee;
+    src: url(../assets/BungeeInline-Regular.ttf);
 }
 
 body {
-    font-family: 'Open Sans', serif;
+    font-family: Nintendo !important;
     padding-top: 54px;
     color: #868e96;
+}
+
+.mat-form-field, .mat-raised-button {
+    font-family: Nintendo !important;
 }
 
 @media (min-width: 992px) {
@@ -25,15 +132,15 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Saira Extra Condensed', serif;
-    font-weight: 700;
+    font-family: Nintendo !important;
     text-transform: uppercase;
     color: #343a40;
 }
 
 h1 {
-    font-size: 6rem;
-    line-height: 5.5rem;
+    font-family: Monoton !important;
+    font-size: 4rem !important;
+    line-height: 3.5rem !important;
 }
 
 h2 {
@@ -41,10 +148,17 @@ h2 {
 }
 
 .subheading {
+    font-family: Bungee !important;
     text-transform: uppercase;
     font-weight: 500;
-    font-family: 'Saira Extra Condensed', serif;
     font-size: 1.35rem;
+    p {
+        margin: 0;
+        mat-icon {
+            top: 4px;
+            position: relative;
+        }
+    }
 }
 
 .list-social-icons a {
@@ -222,17 +336,15 @@ a:hover, a:focus, a:active {
     text-align: left !important;
 }
 
-.salicaria {
+.item-center {
     text-align: center !important;
 }
 
-.salicaria a {
+.item-center a {
     color: black !important;
-    font-family: LearningCurve !important;
-    font-size: -webkit-xxx-large;
 }
 
-.salicaria a:hover {
+.item-center a:hover {
     text-decoration-line: none;
 }
 
@@ -310,4 +422,19 @@ img.svg.flags {
             width: 35%;
         }
     }
+}
+
+.cv-button {
+    color: white;
+}
+
+.rancher {
+    img {
+        width: 40%;
+    }
+}
+
+
+.full-width {
+    width: 100%;
 }

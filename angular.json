@@ -37,8 +37,6 @@
               "node_modules/popper.js/dist/umd/popper.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
               "node_modules/jquery-easing/jquery.easing.1.3.js",
-              "src/js/contact_me.js",
-              "src/js/jqBootstrapValidation.js",
               "src/js/customization.js"
             ]
           },
@@ -91,8 +89,6 @@
               "node_modules/popper.js/dist/umd/popper.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
               "node_modules/jquery-easing/jquery.easing.1.3.js",
-              "src/js/contact_me.js",
-              "src/js/jqBootstrapValidation.js",
               "src/js/customization.js"
             ],
             "styles": [
@@ -162,5 +158,8 @@
     "@schematics/angular:directive": {
       "prefix": "app"
     }
+  },
+  "cli": {
+    "analytics": "941407fd-22de-4fbd-9df0-2038c9754503"
   }
 }

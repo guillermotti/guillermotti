@@ -46,7 +46,15 @@ recaptcha.post('/validate', (req: any, res: any) => {
   }
 
   request(url, (err: any, response: any, body: any) => {
-
+    console.log('Body: ' + body);
+    console.log('Body: ' + JSON.stringify(body));
+    console.log('------------------------');
+    console.log('Response: ' + response);
+    console.log('Response: ' + JSON.stringify(response));
+    console.log('------------------------');
+    console.log('Err: ' + err);
+    console.log('Err: ' + JSON.stringify(err));
+    console.log('------------------------');
     const body_parsed = JSON.parse(body);
     console.log('Body parsed: ' + body_parsed);
     //check if the validation failed

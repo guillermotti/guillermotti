@@ -28,7 +28,7 @@ recaptcha.use(bodyParser.json());
 recaptcha.use(cors());
 
 recaptcha.post('/recaptcha', (req: any, res: any) => {
-  let token = req.body.recaptcha;
+  const token = req.body.recaptcha;
   const secretKey = "6LcWV-AUAAAAAE5bB58PDPuXqOrizmAFJRcVTHWO"; //the secret key from your google admin console;
 
   //token validation url is URL: https://www.google.com/recaptcha/api/siteverify 
@@ -41,7 +41,6 @@ recaptcha.post('/recaptcha', (req: any, res: any) => {
 
   if (token === null || token === undefined) {
     res.status(201).send({ success: false, message: "Token is empty or invalid" })
-    return console.log("token empty");
   }
 
   request(url, (err: any, response: any, body: any) => {
@@ -51,7 +50,6 @@ recaptcha.post('/recaptcha', (req: any, res: any) => {
     //check if the validation failed
     if (body.success !== undefined && !response.data.success) {
       res.send({ success: false, 'message': "recaptcha failed" });
-      return console.log("failed")
     }
 
     //if passed response success message to client

@@ -28,12 +28,9 @@ recaptcha.use(bodyParser.json());
 recaptcha.use(cors());
 
 recaptcha.post('/validate', (req: any, res: any) => {
-  console.log('Req.body: ' + JSON.stringify(req.body));
   const token = req.body.recaptcha;
-  console.log('Token: ' + token);
   const secretKey = "6LcWV-AUAAAAAE5bB58PDPuXqOrizmAFJRcVTHWO"; //the secret key from your google admin console;
 
-  console.log('Remote Address: ' + req.connection.remoteAddress);
   //token validation url is URL: https://www.google.com/recaptcha/api/siteverify 
   // METHOD used is: POST
   const url = `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${token}&remoteip=${req.connection.remoteAddress}`
@@ -46,19 +43,9 @@ recaptcha.post('/validate', (req: any, res: any) => {
   }
 
   request(url, (err: any, response: any, body: any) => {
-    console.log('Body: ' + body);
-    console.log('Body: ' + JSON.stringify(body));
-    console.log('------------------------');
-    console.log('Response: ' + response);
-    console.log('Response: ' + JSON.stringify(response));
-    console.log('------------------------');
-    console.log('Err: ' + err);
-    console.log('Err: ' + JSON.stringify(err));
-    console.log('------------------------');
-    const body_parsed = JSON.parse(body);
-    console.log('Body parsed: ' + body_parsed);
+    body = JSON.parse(body);
     //check if the validation failed
-    if (body_parsed.success !== undefined && !response.data.success) {
+    if (body.success !== undefined && !response.data.success) {
       res.send({ success: false, 'message': "recaptcha failed" });
     }
 

@@ -15,6 +15,7 @@ import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { RecaptchaModule, RecaptchaFormsModule } from 'ng-recaptcha';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 
 // AoT requires an exported function for factories
@@ -45,6 +46,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     MatIconModule,
     MatFormFieldModule,
     MatInputModule,
+    MatSnackBarModule,
     RecaptchaModule,  //this is the recaptcha main module
     RecaptchaFormsModule, //this is the module for form incase form validation
   ],

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { FormControl, FormGroupDirective, NgForm, Validators } from '@angular/forms';
 import { ErrorStateMatcher } from '@angular/material/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
 declare var $: any;
 
 /** Error when invalid control is dirty, touched, or submitted. */
@@ -31,7 +32,7 @@ export class AppComponent implements OnInit {
   ]);
   matcher = new MyErrorStateMatcher();
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient, private snackBar: MatSnackBar) {
 
   }
 
@@ -78,7 +79,13 @@ export class AppComponent implements OnInit {
       email: this.email,
       message: this.message
     }).subscribe(() => {
-
+      this.name = '';
+      this.phone = '';
+      this.email = '';
+      this.message = '';
+      this.snackBar.open('Hurrah!', 'OK', {
+        duration: 4000,
+      });
     });
   }
 
@@ -93,7 +100,7 @@ export class AppComponent implements OnInit {
   //function to resolve the reCaptcha and retrieve a token
   async resolved(captchaResponse: string) {
     console.log(`Resolved response token: ${captchaResponse}`);
-    this.http.post("https://us-central1-guillermotti.cloudfunctions.net/recaptcha/validate", {recaptcha: captchaResponse}).subscribe(res => {
+    this.http.post("https://us-central1-guillermotti.cloudfunctions.net/recaptcha/validate", { recaptcha: captchaResponse }).subscribe(res => {
       if (res) {
         this.recaptcha = true;
       }

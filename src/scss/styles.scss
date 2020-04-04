@@ -100,8 +100,13 @@ $custom-theme: mat-light-theme(mat-palette($green-palette), mat-palette($gray-pa
 }
 
 @font-face {
-    font-family: Nintendo;
-    src: url(../assets/PressStart2P-Regular.ttf);
+    font-family: Inter;
+    src: url(../assets/Inter.ttf);
+}
+
+@font-face {
+    font-family: FiraSans;
+    src: url(../assets/FiraSans-Bold.ttf);
 }
 
 @font-face {
@@ -110,13 +115,22 @@ $custom-theme: mat-light-theme(mat-palette($green-palette), mat-palette($gray-pa
 }
 
 body {
-    font-family: Nintendo !important;
+    font-family: Inter !important;
+    font-size: 18px !important;
     padding-top: 54px;
     color: #868e96;
+
+    .subheading {
+        font-family: FiraSans !important;
+    }
+
+    h1.noJustify {
+        margin-bottom: 20px !important;
+    }
 }
 
 .mat-form-field, .mat-raised-button {
-    font-family: Nintendo !important;
+    font-family: Inter !important;
 }
 
 @media (min-width: 992px) {
@@ -132,7 +146,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: Nintendo !important;
+    font-family: Inter !important;
     text-transform: uppercase;
     color: #343a40;
 }

@@ -9,8 +9,8 @@ module.exports = (contact: {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'fireshopsoftware',
-      pass: 'thousands1000@' // Cambialo por tu password
+      user: 'guillermovigilr',
+      pass: 'iysjkhlynnykccft' // Cambialo por tu password
     }
   });
   const mailOptions = {

@@ -1,6 +1,8 @@
 # Ywp! 👋🏽
 
+<div>
 [![Welcome!](https://readme-typing-svg.herokuapp.com/?lines=Nice+to+meet+you!;My+name+is+Guille+👽;This+is+my+profile+🚀&center=true)](https://git.io/typing-svg)
+</div>
 
 <!-- ![visitors](https://visitor-badge.glitch.me/badge?page_id=guillermotti.visitor-badge) -->
 <img alt="Kubernetes" src="https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white"/>

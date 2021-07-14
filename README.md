@@ -13,14 +13,16 @@
     <img alt="AWS" src="https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white"/>
     <img alt="Google Cloud" src="https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white"/>
     <img alt="Firebase" src="https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase"/>
+    <img alt="GitHub" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"/>
     <img alt="Angular" src="https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white"/>
+    <img alt="NodeJS" src="https://img.shields.io/badge/node.js-%2343853D.svg?style=for-the-badge&logo=node-dot-js&logoColor=white"/>
 </div>
 
 <div align="center">
     <!-- <p>Check my stats</p> -->
     <!-- ![visitors](https://visitor-badge.glitch.me/badge?page_id=guillermotti.visitor-badge) -->
 
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=guillermotti)](https://git.io/streak-stats)
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=guillermotti&theme=dark)](https://git.io/streak-stats)
 ![Guillermotti's GitHub stats](https://github-readme-stats.vercel.app/api?username=guillermotti&show_icons=true&theme=dark&count_private=true&custom_title=Guillermotti%27s+GitHub+Stats)
 </div>
 

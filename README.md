@@ -1,11 +1,17 @@
 <div align="center">
 
-[![Welcome!](https://readme-typing-svg.herokuapp.com/?lines=Ywp!+👋;Nice+to+meet+you!;My+name+is+Guille+👽;This+is+my+profile+🚀&font=ubuntu&color=32a852&center=true)](https://git.io/typing-svg)
+[![Welcome!](https://readme-typing-svg.herokuapp.com/?lines=Ywp!+👋;Nice+to+meet+you!+😚;My+name+is+Guille+👽;This+is+my+profile+🚀&font=ubuntu&color=32a852&center=true)](https://git.io/typing-svg)
 
 </div>
 
+<br>
+<hr>
+<br>
+
+```ts
+let technologies
+```
 <div align="center">
-    <!-- <p>My favorite technologies</p> -->
     <img alt="Kubernetes" src="https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white"/>
     <img alt="Docker" src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white"/>
     <img alt="Terraform" src="https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white"/>
@@ -18,17 +24,28 @@
     <img alt="NodeJS" src="https://img.shields.io/badge/node.js-%2343853D.svg?style=for-the-badge&logo=node-dot-js&logoColor=white"/>
 </div>
 
-<div align="center">
-    <!-- <p>Check my stats</p> -->
-    <!-- ![visitors](https://visitor-badge.glitch.me/badge?page_id=guillermotti.visitor-badge) -->
+<br>
+<hr>
+<br>
 
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=guillermotti&theme=dark)](https://git.io/streak-stats)
-![Guillermotti's GitHub stats](https://github-readme-stats.vercel.app/api?username=guillermotti&show_icons=true&theme=dark&count_private=true&custom_title=Guillermotti%27s+GitHub+Stats)
+```ts
+const stats
+```
+<div align="center">
+<a href="https://git.io/streak-stats"><img alt="Guillermotti's Github Streak" src="https://github-readme-streak-stats.herokuapp.com/?user=guillermotti&theme=dark" height="192px"/></a>
+<a href="https://github.com/anuraghazra/github-readme-stats"><img alt="Guillermotti's Github Stats" src="https://denvercoder1-github-readme-stats.vercel.app/api/?username=guillermotti&show_icons=true&count_private=true&theme=dark&custom_title=Guillermotti's+Github+Stats" height="192px"/></a>
+<a href="https://github.com/anuraghazra/github-readme-stats"><img alt="Guillermotti's Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=guillermotti&langs_count=8&layout=compact&theme=dark" height="192px"/></a>
+  <br/>
 </div>
 
+<br>
+<hr>
+<br>
+
+```js
+// Thanks for visiting, you are the visitor number
+```
 <div align="center">
-    <p>Thanks for visiting, you are the visitor number</p>
-    <!-- ![visitors](https://visitor-badge.glitch.me/badge?page_id=guillermotti.visitor-badge) -->
 
 ![visitors](https://profile-counter.glitch.me/guillermotti/count.svg)
 </div>

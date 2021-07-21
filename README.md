@@ -1,17 +1,17 @@
 <div align="center">
 
-[![Welcome!](https://readme-typing-svg.herokuapp.com/?lines=Ywp!+👋;Nice+to+meet+you!+😚;My+name+is+Guille+👽;This+is+my+profile+🚀&font=ubuntu&color=32a852&center=true)](https://git.io/typing-svg)
+[![Welcome!](https://readme-typing-svg.herokuapp.com/?lines=Yep!+👋;Nice+to+meet+you!+😚;My+name+is+Guille+👽;This+is+my+profile+🚀&font=ubuntu&color=32a852&center=true)](https://git.io/typing-svg)
 
 </div>
 
-<hr>
 <br>
 
 ```ts
-// Technologies --> How it started
+// TECHNOLOGIES 
+// How it started
 technologies: string[] = [];
 
-// Technologies --> How it's going
+// How it's going
 ```
 <div align="center">
     <img alt="Kubernetes" src="https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white"/>
@@ -19,6 +19,7 @@ technologies: string[] = [];
     <img alt="Terraform" src="https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white"/>
     <img alt="Jenkins" src="https://img.shields.io/badge/jenkins-%232C5263.svg?style=for-the-badge&logo=jenkins&logoColor=white"/>
     <img alt="AWS" src="https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white"/>
+    <br>
     <img alt="Google Cloud" src="https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white"/>
     <img alt="Firebase" src="https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase"/>
     <img alt="GitHub" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"/>
@@ -27,14 +28,13 @@ technologies: string[] = [];
 </div>
 
 <br>
-<hr>
-<br>
 
 ```ts
-// Stats --> How it started
+// STATS
+// How it started
 stats: Stats = new Stats();
 
-// Stats --> How it's going
+// How it's going
 ```
 <div align="center">
 <a href="https://git.io/streak-stats"><img alt="Guillermotti's GitHub Streak" src="https://github-readme-streak-stats.herokuapp.com/?user=guillermotti&theme=dark" height="192px"/></a>
@@ -44,14 +44,13 @@ stats: Stats = new Stats();
 </div>
 
 <br>
-<hr>
-<br>
 
 ```ts
-// Visitors --> How it started
+// VISITORS 
+// How it started
 count: number = 0;
 
-// Visitors --> How it's going
+// How it's going
 ```
 
 <div align="center">

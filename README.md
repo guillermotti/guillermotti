@@ -4,12 +4,14 @@
 
 </div>
 
-<br>
 <hr>
 <br>
 
 ```ts
-let technologies
+// Technologies --> How it started
+technologies: string[] = [];
+
+// Technologies --> How it's going
 ```
 <div align="center">
     <img alt="Kubernetes" src="https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white"/>
@@ -29,11 +31,14 @@ let technologies
 <br>
 
 ```ts
-const stats
+// Stats --> How it started
+stats: Stats = new Stats();
+
+// Stats --> How it's going
 ```
 <div align="center">
-<a href="https://git.io/streak-stats"><img alt="Guillermotti's Github Streak" src="https://github-readme-streak-stats.herokuapp.com/?user=guillermotti&theme=dark" height="192px"/></a>
-<a href="https://github.com/anuraghazra/github-readme-stats"><img alt="Guillermotti's Github Stats" src="https://denvercoder1-github-readme-stats.vercel.app/api/?username=guillermotti&show_icons=true&count_private=true&theme=dark&custom_title=Guillermotti's+Github+Stats" height="192px"/></a>
+<a href="https://git.io/streak-stats"><img alt="Guillermotti's GitHub Streak" src="https://github-readme-streak-stats.herokuapp.com/?user=guillermotti&theme=dark" height="192px"/></a>
+<a href="https://github.com/anuraghazra/github-readme-stats"><img alt="Guillermotti's GitHub Stats" src="https://denvercoder1-github-readme-stats.vercel.app/api/?username=guillermotti&show_icons=true&count_private=true&theme=dark&custom_title=Guillermotti's+GitHub+Stats" height="192px"/></a>
 <a href="https://github.com/anuraghazra/github-readme-stats"><img alt="Guillermotti's Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=guillermotti&langs_count=8&layout=compact&theme=dark" height="192px"/></a>
   <br/>
 </div>
@@ -42,10 +47,13 @@ const stats
 <hr>
 <br>
 
-```js
-// Thanks for visiting, you are the visitor number
-```
-<div align="center">
+```ts
+// Visitors --> How it started
+count: number = 0;
 
-![visitors](https://profile-counter.glitch.me/guillermotti/count.svg)
+// Visitors --> How it's going
+```
+
+<div align="center">
+    <a href="https://profile-counter.glitch.me"><img alt="Guillermotti's GitHub Visitors" src="https://profile-counter.glitch.me/guillermotti/count.svg"/></a>
 </div>

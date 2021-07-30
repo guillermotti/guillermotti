@@ -1,1 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+@font-face {
+  font-family: "CabinetGrotesk";
+  font-weight: 100;
+  src: url(./assets/fonts/CabinetGrotesk-Thin.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "CabinetGrotesk";
+  font-weight: 200;
+  src: url(./assets/fonts/CabinetGrotesk-Extralight.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "CabinetGrotesk";
+  font-weight: 300;
+  src: url(./assets/fonts/CabinetGrotesk-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "CabinetGrotesk";
+  font-weight: 400;
+  src: url(./assets/fonts/CabinetGrotesk-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "CabinetGrotesk";
+  font-weight: 500;
+  src: url(./assets/fonts/CabinetGrotesk-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "CabinetGrotesk";
+  font-weight: 700;
+  src: url(./assets/fonts/CabinetGrotesk-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "CabinetGrotesk";
+  font-weight: 800;
+  src: url(./assets/fonts/CabinetGrotesk-Extrabold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "CabinetGrotesk";
+  font-weight: 900;
+  src: url(./assets/fonts/CabinetGrotesk-Black.ttf) format("truetype");
+}

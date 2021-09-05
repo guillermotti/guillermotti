@@ -1,5 +1,5 @@
-<div class="{{isDark ? 'dark' : ''}} font-cabinet-grotesk">
-  <div class="flex flex-col bg-paper-white dark:bg-paper-gray dark:text-white md:h-screen">
+<div class="{{isDark ? 'dark' : ''}} font-cabinet-grotesk grid h-screen">
+  <div class="flex flex-col bg-paper-white dark:bg-paper-gray dark:text-white">
     <div class="flex mx-12 my-8">
       <svg class="flex-none w-8 h-8 dark:filter dark:grayscale" width="30" height="30" viewBox="0 0 30 30" fill="none"
         xmlns="http://www.w3.org/2000/svg">
@@ -11,22 +11,21 @@
           fill="#0F1110" />
       </svg>
       <div class="flex-grow">
-        <img *ngIf="!isDark" class="absolute max-w-sm max-h-sm transform rotate-180 -scale-x-1 -top-20 sm:right-40"
+        <img *ngIf="!isDark" class="absolute transform -scale-y-1 scale-x-1 w-20 -top-14 sm:right-60"
           src="../assets/Light-brown-in-Basic9.png">
-        <img *ngIf="isDark" class="absolute max-w-sm max-h-sm transform rotate-180 -scale-x-1 -top-20 sm:right-40"
+        <img *ngIf="isDark" class="absolute transform -scale-y-1 scale-x-1 w-20 -top-14 sm:right-60"
           src="../assets/Green-in-Jumper11.png">
       </div>
       <button class="flex-none w-36 h-12 font-medium z-50" (click)="changeMode()">{{textButton}}</button>
     </div>
-    <div class="flex text-xl md:text-3xl font-light mx-12 my-6">
-      <div class="flex-none">
-        <p><span class="font-medium">Guille</span> is a devops engineer and</p>
-        <p>developer based in Asturias.</p>
-        <p>Working at <span class="font-medium">empathy.co</span>, formerly</p>
-        <p>at <span class="font-medium">DXC Technology</span> and <span class="font-medium">Indra</span>.</p>
+    <div class="flex flex-col sm:flex-row text-xl md:text-3xl font-light mx-12 my-6">
+      <div class="flex-none max-w-md">
+        <p><span class="font-medium">Guille</span> is a devops engineer and developer based in Asturias. Working at
+          <span class="font-medium">empathy.co</span>, formerly at <span class="font-medium">DXC Technology</span> and
+          <span class="font-medium">Indra</span>.</p>
       </div>
       <div class="flex-grow"></div>
-      <div class="flex-none">
+      <div class="flex flex-wrap sm:flex-col justify-around">
         <a href="https://github.com/guillermotti" target="_blank" rel="noopener noreferrer">
           <svg width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" class="my-4">
             <path *ngIf="!isDark"
@@ -59,12 +58,12 @@
         </a>
       </div>
     </div>
-    <div class="mx-12 mt-24 divide-y-2 divide-gray">
+    <div class="mx-12 mt-8 sm:mt-16 divide-y-2 divide-gray">
       <p class="text-xl font-extrabold">Skills and Certifications</p>
-      <div class="flex flex-wrap">
-        <div class="mt-8 mr-16">
+      <div class="flex flex-wrap justify-start">
+        <div class="mt-8 sm:mr-20">
           <p class="mb-4"><span class="font-bold">Containers:</span> Docker, Kubernetes, Rancher.</p>
-          <p class="mb-4"><span class="font-bold">IaC:</span> Terraform, Serverless.</p>
+          <p class="mb-4"><span class="font-bold">Infrastructure As Code:</span> Terraform, Serverless.</p>
           <p class="mb-4"><span class="font-bold">GitOps:</span> ArgoCD, Spinnaker.</p>
           <p class="mb-4"><span class="font-bold">Cloud:</span> AWS, GCP, Firebase.</p>
           <p class="mb-4"><span class="font-bold">CI/CD:</span> Jenkins, GitHub Actions, CircleCI, GitLabCI.</p>
@@ -86,7 +85,7 @@
             </div>
             <a href="https://www.credly.com/badges/a8737608-a450-4bcd-b1e5-e94a392094d8" target="_blank"
               rel="noopener noreferrer" class="flex flex-wrap">
-              <p>
+              <p class="w-4/5 sm:w-auto">
                 <span class="font-bold">CKA </span><span class="underline"> Certified Kubernetes
                   Administrator</span>
               </p>
@@ -114,7 +113,7 @@
             </div>
             <a href="https://www.credly.com/badges/4c8601e9-4215-4bbd-853a-61d73c665102" target="_blank"
               rel="noopener noreferrer" class="flex flex-wrap">
-              <p>
+              <p class="w-4/5 sm:w-auto">
                 <span class="font-bold">HashiCorp Certified </span><span class="underline"> Terraform Associate</span>
               </p>
               <svg class="mt-1 ml-4" width="17" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -141,7 +140,7 @@
             </div>
             <a href="https://www.credly.com/badges/b82f1e41-6e19-49ec-831b-6068dd6da480" target="_blank"
               rel="noopener noreferrer" class="flex flex-wrap">
-              <p>
+              <p class="w-4/5 sm:w-auto">
                 <span class="font-bold">CKAD </span><span class="underline"> Certified Kubernetes
                   Application Developer</span>
               </p>
@@ -158,13 +157,109 @@
         </div>
       </div>
     </div>
-    <div class="mx-12 mt-24 divide-y-2 divide-gray">
+    <div class="mx-12 mt-8 sm:mt-16 divide-y-2 divide-gray">
       <p class="text-xl font-extrabold">Posts and Talks</p>
-      <div>Hola</div>
+      <div class="flex flex-wrap justify-start">
+        <div class="mt-8 sm:mr-20">
+          <p class="mb-4 text-sm"><span class="font-bold">MEDIUM</span></p>
+          <a href="https://medium.com/empathyco/git-for-everyone-8bf7e9efc254" target="_blank" rel="noopener noreferrer"
+            class="flex flex-wrap">
+            <p class="w-4/5 sm:w-auto">
+              <span class="font-bold">Git for everyone </span><span class="text-xs"> Introduction to git. 12 min
+                read</span>
+            </p>
+            <svg class="mt-1 ml-4" width="17" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path *ngIf="!isDark"
+                d="M11.8 13.2l-1.4-2.83-6.83 3.94L.2 8.46l6.83-3.94-1.76-2.64L7.78.43l8.34 2.73-1.8 8.6-2.52 1.45zm1.68-1.65l1.72-7.86-7.66-2.43 2.02 3.1-6.75 3.9 2.24 3.88 6.75-3.9 1.68 3.3z"
+                fill="#000" />
+              <path *ngIf="isDark"
+                d="M11.8 13.2l-1.4-2.83-6.83 3.94L.2 8.46l6.83-3.94-1.76-2.64L7.78.43l8.34 2.73-1.8 8.6-2.52 1.45zm1.68-1.65l1.72-7.86-7.66-2.43 2.02 3.1-6.75 3.9 2.24 3.88 6.75-3.9 1.68 3.3z"
+                fill="#FFF" />
+            </svg>
+          </a>
+          <a href="https://medium.com/empathyco/documentation-as-code-10e83b02a3a5" target="_blank"
+            rel="noopener noreferrer" class="flex flex-wrap">
+            <p class="w-4/5 sm:w-auto">
+              <span class="font-bold">Documentation As Code </span><span class="text-xs"> Docusaurus and MDX. 5 min
+                read</span>
+            </p>
+            <svg class="mt-1 ml-4" width="17" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path *ngIf="!isDark"
+                d="M11.8 13.2l-1.4-2.83-6.83 3.94L.2 8.46l6.83-3.94-1.76-2.64L7.78.43l8.34 2.73-1.8 8.6-2.52 1.45zm1.68-1.65l1.72-7.86-7.66-2.43 2.02 3.1-6.75 3.9 2.24 3.88 6.75-3.9 1.68 3.3z"
+                fill="#000" />
+              <path *ngIf="isDark"
+                d="M11.8 13.2l-1.4-2.83-6.83 3.94L.2 8.46l6.83-3.94-1.76-2.64L7.78.43l8.34 2.73-1.8 8.6-2.52 1.45zm1.68-1.65l1.72-7.86-7.66-2.43 2.02 3.1-6.75 3.9 2.24 3.88 6.75-3.9 1.68 3.3z"
+                fill="#FFF" />
+            </svg>
+          </a>
+        </div>
+        <div class="mt-8">
+          <p class="mb-4 text-sm"><span class="font-bold">CLOUD NATIVE ASTURIAS</span></p>
+          <a href="https://www.youtube.com/watch?v=J2vGGGa4Y20" target="_blank" rel="noopener noreferrer"
+            class="flex flex-wrap">
+            <p class="font-bold w-4/5 sm:w-auto">How to manage GitHub organizations with Terraform </p>
+            <svg class="mt-1 ml-4" width="17" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path *ngIf="!isDark"
+                d="M11.8 13.2l-1.4-2.83-6.83 3.94L.2 8.46l6.83-3.94-1.76-2.64L7.78.43l8.34 2.73-1.8 8.6-2.52 1.45zm1.68-1.65l1.72-7.86-7.66-2.43 2.02 3.1-6.75 3.9 2.24 3.88 6.75-3.9 1.68 3.3z"
+                fill="#000" />
+              <path *ngIf="isDark"
+                d="M11.8 13.2l-1.4-2.83-6.83 3.94L.2 8.46l6.83-3.94-1.76-2.64L7.78.43l8.34 2.73-1.8 8.6-2.52 1.45zm1.68-1.65l1.72-7.86-7.66-2.43 2.02 3.1-6.75 3.9 2.24 3.88 6.75-3.9 1.68 3.3z"
+                fill="#FFF" />
+            </svg>
+          </a>
+          <!-- <p class="max-w-md break-words">Terraform provides a lot of different providers, one of them is the GitHub
+            provider. We are going to manage
+            an entire GitHub organization in a repository as Infrastructure as Code from scratch.</p> -->
+        </div>
+      </div>
     </div>
-    <div class="mx-12 mt-24 divide-y-2 divide-gray">
+    <div class="mx-12 mt-8 sm:mt-16 mb-12 divide-y-2 divide-gray">
       <p class="text-xl font-extrabold">Projects</p>
-      <div>Hola</div>
+      <div class="">
+        <div class="mt-8 flex flex-wrap">
+          <a href="https://feta.es" target="_blank" rel="noopener noreferrer" class="flex flex-wrap mr-10">
+            <p class="font-bold">feta.es</p>
+            <svg class="mt-1 ml-4" width="17" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path *ngIf="!isDark"
+                d="M11.8 13.2l-1.4-2.83-6.83 3.94L.2 8.46l6.83-3.94-1.76-2.64L7.78.43l8.34 2.73-1.8 8.6-2.52 1.45zm1.68-1.65l1.72-7.86-7.66-2.43 2.02 3.1-6.75 3.9 2.24 3.88 6.75-3.9 1.68 3.3z"
+                fill="#000" />
+              <path *ngIf="isDark"
+                d="M11.8 13.2l-1.4-2.83-6.83 3.94L.2 8.46l6.83-3.94-1.76-2.64L7.78.43l8.34 2.73-1.8 8.6-2.52 1.45zm1.68-1.65l1.72-7.86-7.66-2.43 2.02 3.1-6.75 3.9 2.24 3.88 6.75-3.9 1.68 3.3z"
+                fill="#FFF" />
+            </svg>
+          </a>
+          <a href="https://canoserigrafia.com" target="_blank" rel="noopener noreferrer" class="flex flex-wrap mr-10">
+            <p class="font-bold">canoserigrafia.com</p>
+            <svg class="mt-1 ml-4" width="17" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path *ngIf="!isDark"
+                d="M11.8 13.2l-1.4-2.83-6.83 3.94L.2 8.46l6.83-3.94-1.76-2.64L7.78.43l8.34 2.73-1.8 8.6-2.52 1.45zm1.68-1.65l1.72-7.86-7.66-2.43 2.02 3.1-6.75 3.9 2.24 3.88 6.75-3.9 1.68 3.3z"
+                fill="#000" />
+              <path *ngIf="isDark"
+                d="M11.8 13.2l-1.4-2.83-6.83 3.94L.2 8.46l6.83-3.94-1.76-2.64L7.78.43l8.34 2.73-1.8 8.6-2.52 1.45zm1.68-1.65l1.72-7.86-7.66-2.43 2.02 3.1-6.75 3.9 2.24 3.88 6.75-3.9 1.68 3.3z"
+                fill="#FFF" />
+            </svg>
+          </a>
+          <a href="https://storeos.org" target="_blank" rel="noopener noreferrer" class="flex flex-wrap mr-10">
+            <p class="font-bold">storeos.org</p>
+            <svg class="mt-1 ml-4" width="17" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path *ngIf="!isDark"
+                d="M11.8 13.2l-1.4-2.83-6.83 3.94L.2 8.46l6.83-3.94-1.76-2.64L7.78.43l8.34 2.73-1.8 8.6-2.52 1.45zm1.68-1.65l1.72-7.86-7.66-2.43 2.02 3.1-6.75 3.9 2.24 3.88 6.75-3.9 1.68 3.3z"
+                fill="#000" />
+              <path *ngIf="isDark"
+                d="M11.8 13.2l-1.4-2.83-6.83 3.94L.2 8.46l6.83-3.94-1.76-2.64L7.78.43l8.34 2.73-1.8 8.6-2.52 1.45zm1.68-1.65l1.72-7.86-7.66-2.43 2.02 3.1-6.75 3.9 2.24 3.88 6.75-3.9 1.68 3.3z"
+                fill="#FFF" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-wrap justify-center pb-10">
+      <p>
+        Designed with <span *ngIf="!isDark">❤️</span><span *ngIf="isDark">💜</span> by
+        <a href="https://alexalbuerne.com" target="_blank" rel="noopener noreferrer" class="underline">
+          @alex
+        </a>
+      </p>
     </div>
   </div>
 </div>

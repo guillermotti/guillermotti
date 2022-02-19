@@ -41,6 +41,7 @@ export class AppComponent {
     { "event": "KUBERNETES COMMUNITY DAYS GUATEMALA", "title": "GitHub Actions self-hosting runners in k8s", "date": "Nov, 2021", "href": "https://www.youtube.com/watch?v=eNrbfLPqxBM" },
   ]
   projects = [
+    { "name": "cmmse", "href": "https://cmmse-app.firebaseapp.com"},
     { "name": "feta.es", "href": "https://feta.es" },
     { "name": "canoserigrafia.com", "href": "https://canoserigrafia.com" },
     { "name": "storeos.org", "href": "https://storeos.org" },

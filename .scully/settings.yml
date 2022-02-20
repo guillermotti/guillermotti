@@ -1,0 +1,11 @@
+identifier: k3zavfqbgc30r7cd
+appPort: 1864
+staticPort: 1668
+reloadPort: 2667
+hostName: localhost
+projectName: guillermotti
+homeFolder: /Users/guillermotti/Documents/repos/guillermotti
+distFolder: dist/guillermotti
+outDir: /Users/guillermotti/Documents/repos/guillermotti/dist/static
+handle404: ''
+allowErrorCollect: true

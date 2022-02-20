@@ -12,5 +12,6 @@ authorTwitter: crutchcorn
 
 How are you doing?
 
+![My image](/assets/images/photo.png)
 
 Hellloooo

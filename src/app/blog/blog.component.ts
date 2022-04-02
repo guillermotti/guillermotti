@@ -9,7 +9,13 @@ import { map } from 'rxjs/operators';
 })
 export class BlogComponent {
 
-  constructor(private scully: ScullyRoutesService) { }
+  isDark: boolean;
+  textButton: string;
+
+  constructor(private scully: ScullyRoutesService) {
+    this.isDark = localStorage.getItem('isDark') === 'true';
+    this.textButton = localStorage.getItem('isDark') === 'true' ? 'Dude, turn lights on' : 'Heck, bring me dark';
+  }
 
   $blogPosts = this.scully.available$.pipe(
     map(routes =>
@@ -19,5 +25,11 @@ export class BlogComponent {
       )
     )
   );
+
+  changeMode() {
+    this.isDark = !this.isDark;
+    this.textButton = this.textButton.includes('Heck') ? 'Dude, turn lights on' : 'Heck, bring me dark';
+    localStorage.setItem('isDark', this.isDark.toString());
+  }
 
 }

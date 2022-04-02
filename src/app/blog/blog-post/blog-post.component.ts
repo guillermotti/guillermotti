@@ -10,10 +10,17 @@ import { map, pluck } from 'rxjs/operators';
 })
 export class BlogPostComponent {
 
+  isDark: boolean;
+  textButton: string;
+
   constructor(
     private activatedRoute: ActivatedRoute,
     private scully: ScullyRoutesService
-  ) { }
+  ) {
+    this.isDark = localStorage.getItem('isDark') === 'true';
+    this.textButton = localStorage.getItem('isDark') === 'true' ? 'Dude, turn lights on' : 'Heck, bring me dark';
+  }
+
   $blogPostMetadata = combineLatest([
     this.activatedRoute.params.pipe(pluck('postId')),
     this.scully.available$
@@ -22,5 +29,11 @@ export class BlogPostComponent {
       routes.find(route => route.route === `/blog/${postId}`)
     )
   );
+
+  changeMode() {
+    this.isDark = !this.isDark;
+    this.textButton = this.textButton.includes('Heck') ? 'Dude, turn lights on' : 'Heck, bring me dark';
+    localStorage.setItem('isDark', this.isDark.toString());
+  }
 
 }

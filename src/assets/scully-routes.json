@@ -1,1 +1,1 @@
-[{"route":"/"},{"route":"/blog/test-post","title":"Test post","description":"This is a post description","publish":true,"authorName":"Corbin Crutchley","authorTwitter":"crutchcorn","sourceFile":"test-post.md"},{"route":"/blog"}]
+[{"route":"/"},{"route":"/blog/test-post","title":"Test post very very very very very long title","description":"This is a very very very very very long post description","publish":true,"image":"/assets/images/photo.png","tags":["tag1","tag2"],"date":"31st March 2022","sourceFile":"test-post.md"},{"route":"/blog"}]

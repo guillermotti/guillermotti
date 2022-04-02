@@ -1,8 +1,34 @@
-<h1 *ngIf="$blogPostMetadata | async as blogPost">Blog Post by {{blogPost.authorName}}</h1>
-<hr>
-<!-- This is where Scully will inject the static HTML -->
-<scully-content></scully-content>
-<hr>
-<h2>End of content</h2>
-
-<div [appUtterances]="true"></div>
+<div class="{{isDark ? 'dark' : ''}} font-cabinet-grotesk grid h-screen">
+  <div class="flex flex-col bg-paper-white dark:bg-paper-gray dark:text-white">
+    <div class="flex mx-12 my-8">
+      <a [routerLink]="['/']">
+        <svg class="flex-none w-8 h-8 dark:filter dark:grayscale" width="30" height="30" viewBox="0 0 30 30" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M13.4 29.92L13.96 18.4L10.12 29.28L7.88004 28.4L12.84 17.92L5.16004 26.56L3.40004 24.8L12.04 17.12L1.56004 22.08L0.680039 19.84L11.56 16L0.0400391 16.56V14.16L11.56 14.8L0.680039 10.88L1.56004 8.71999L12.04 13.68L3.40004 5.91999L5.16004 4.23999L12.84 12.8L7.88004 2.39999L10.12 1.43999L13.96 12.4L13.4 0.799988H15.8L15.16 12.32L19.08 1.43999L21.24 2.39999L16.28 12.8L24.04 4.23999L25.72 5.91999L17.16 13.68L27.56 8.71999L28.52 10.88L17.56 14.8L29.16 14.16V16.56L17.56 16L28.52 19.84L27.56 22.08L17.16 17.12L25.72 24.8L24.04 26.56L16.28 17.92L21.24 28.4L19.08 29.28L15.16 18.4L15.8 29.92H13.4Z"
+            attr.fill="{{ isDark ? '#FFF' : '#000' }}" />
+        </svg>
+      </a>
+      <div class="flex-grow">
+        <img class="absolute transform -scale-y-1 scale-x-1 w-20 -top-14 sm:right-60"
+          src="{{ isDark ? '../assets/Green-in-Jumper11.png' : '../assets/Light-brown-in-Basic9.png'}}">
+      </div>
+      <button class="flex-none w-36 h-12 font-medium z-50" (click)="changeMode()">{{textButton}}</button>
+    </div>
+    <div *ngIf="$blogPostMetadata | async as blogPost" class="mb-12 flex flex-col justify-start w-screen">
+      <div class="mx-12 mt-8 sm:mt-16 divide-y-2 divide-gray">
+        <p class="text-xl font-extrabold">{{blogPost.title}}</p>
+        <div class="grid grid-cols-12">
+          <div class="col-start-2 col-span-11 border-l-2 border-gray">
+            <div class="mx-5 my-10">
+              <scully-content></scully-content>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-12">
+          <div [appUtterances]="true" class="col-start-2 col-span-11 border-l-2 border-gray"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

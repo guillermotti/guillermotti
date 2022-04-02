@@ -7,28 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  isDark: boolean;
+  textButton: string;
+
+  constructor() {
+    this.isDark = localStorage.getItem('isDark') === 'true';
+    this.textButton = localStorage.getItem('isDark') === 'true' ? 'Dude, turn lights on' : 'Heck, bring me dark';
+  }
 
   ngOnInit(): void {
   }
 
-  isDark = false;
-  textButton = 'Heck, bring me dark';
   networks = [
     { "href": "https://github.com/guillermotti", "width": "25", "height": "24", "d": "M12.5.42a12.08 12.08 0 00-3.82 23.54c.6.11.83-.25.83-.57l-.02-2.25c-3.03.56-3.82-.74-4.06-1.42-.14-.35-.72-1.42-1.24-1.7-.42-.23-1.02-.8-.01-.8.95-.02 1.63.87 1.86 1.23 1.08 1.83 2.82 1.31 3.51 1 .11-.79.43-1.32.77-1.62-2.68-.3-5.5-1.34-5.5-5.96 0-1.32.47-2.4 1.25-3.25-.13-.3-.55-1.54.12-3.2 0 0 1-.32 3.32 1.24a11.21 11.21 0 016.04 0c2.31-1.58 3.32-1.24 3.32-1.24.67 1.66.25 2.9.12 3.2a4.68 4.68 0 011.24 3.25c0 4.63-2.82 5.66-5.5 5.96.43.38.8 1.1.8 2.24v3.32c0 .32.22.7.82.57A12.1 12.1 0 0012.5.42z" },
     { "href": "https://www.linkedin.com/in/guillermotti/", "width": "24", "height": "23", "d": "M5.39 3.04a2.42 2.42 0 11-4.84 0 2.42 2.42 0 014.84 0zm.07 4.2H.62v15.13h4.84V7.26zm7.63 0H8.3v15.14h4.76v-7.94c0-4.43 5.76-4.84 5.76 0v7.94h4.77v-9.59c0-7.45-8.53-7.17-10.53-3.51l.04-2.03z" },
     { "href": "https://twitter.com/guillermotti", "width": "25", "height": "21", "d": "M24.78 3.33c-.92.41-1.9.68-2.9.8a5.07 5.07 0 002.22-2.8c-1 .6-2.08 1-3.21 1.23a5.05 5.05 0 00-8.61 4.6A14.35 14.35 0 011.86 1.9a5.04 5.04 0 001.57 6.75A5.04 5.04 0 011.13 8v.07a5.06 5.06 0 004.06 4.95c-.74.2-1.52.23-2.28.09a5.06 5.06 0 004.72 3.5 10.14 10.14 0 01-7.48 2.1 14.3 14.3 0 007.74 2.27c9.3 0 14.38-7.7 14.38-14.38l-.01-.65c.99-.71 1.84-1.6 2.52-2.61z" }
   ];
-  skills = [
-    { "title": "Containers", "description": "Docker, Kubernetes, Rancher" },
-    { "title": "Infrastructure As Code", "description": "Terraform, Serverless" },
-    { "title": "GitOps", "description": "ArgoCD, Spinnaker, Harness" },
-    { "title": "Cloud", "description": "AWS, GCP, Firebase" },
-    { "title": "CI/CD", "description": "Jenkins, GitHub Actions, CircleCI, GitLabCI" },
-    { "title": "Development", "description": "Node.js, Angular" },
-    { "title": "Databases", "description": "ElasticSearch, MongoDB, PostgreSQL" }
-  ];
   certifications = [
+    { "name": "AWS", "description": "Certified Developer - Associate", "date": "March, 2022", "badge": "https://www.credly.com/badges/8ffae0c0-0718-41f6-b7f7-10a71f6f3438", "src": "../assets/AWS-Developer-Associate.png" },
     { "name": "AWS", "description": "Certified SysOps Administrator - Associate", "date": "January, 2022", "badge": "https://www.credly.com/badges/e6bba1a5-82e5-4887-9583-6a6ae1911301", "src": "../assets/AWS-SysOps-Associate.png" },
     { "name": "AWS", "description": "Certified Solutions Architect - Associate", "date": "January, 2022", "badge": "https://www.credly.com/badges/a16f19d6-ea33-4cfc-b54d-299709f5cd3e", "src": "../assets/AWS-SolArchitect-Associate.png" },
     { "name": "AWS", "description": "Certified Cloud Practitioner", "date": "December, 2021", "badge": "https://www.credly.com/badges/fe0918ae-3c2a-42b3-95d8-d9fb06b0f00a", "src": "../assets/AWS-CloudPractitioner.png" },
@@ -47,7 +43,7 @@ export class HomeComponent implements OnInit {
     { "event": "KUBERNETES COMMUNITY DAYS GUATEMALA", "title": "GitHub Actions self-hosting runners in k8s", "date": "Nov, 2021", "href": "https://www.youtube.com/watch?v=eNrbfLPqxBM" },
   ]
   projects = [
-    { "name": "cmmse", "href": "https://cmmse-app.firebaseapp.com"},
+    { "name": "cmmse", "href": "https://cmmse-app.firebaseapp.com" },
     { "name": "feta.es", "href": "https://feta.es" },
     { "name": "canoserigrafia.com", "href": "https://canoserigrafia.com" },
     { "name": "storeos.org", "href": "https://storeos.org" },
@@ -56,6 +52,7 @@ export class HomeComponent implements OnInit {
   changeMode() {
     this.isDark = !this.isDark;
     this.textButton = this.textButton.includes('Heck') ? 'Dude, turn lights on' : 'Heck, bring me dark';
+    localStorage.setItem('isDark', this.isDark.toString());
   }
 
 }

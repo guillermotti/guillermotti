@@ -17,54 +17,9 @@
     </div>
 
     <div class="mb-12 flex flex-col justify-start w-screen">
-      <div class="mx-12 mt-8 sm:mt-16 divide-y-2 divide-gray">
+      <div class="ml-12 pr-12 mt-8 sm:mt-16 divide-y-2 divide-gray">
         <p class="text-xl font-extrabold">Posts</p>
         <div class="flex flex-wrap justify-between">
-          <div *ngFor="let blog of $blogPosts | async" class="mt-12 max-w-xs">
-            <a [routerLink]="blog.route">
-              <img [attr.src]="blog.image" class="h-80 w-80">
-            </a>
-            <div class="flex flex-row justify-between mt-2">
-              <a [routerLink]="blog.route">
-                <p class="text-xl font-semibold underline underline-offset-1">{{blog.title}}</p>
-              </a>
-              <p>{{blog.date}}</p>
-            </div>
-            <p class="text-lg">{{blog.description}}</p>
-            <div class="flex flex-row justify-start mt-2">
-              <p *ngFor="let tag of blog.tags" class="mr-8 rounded-full bg-slate-500 px-2 py-1">{{tag}}</p>
-            </div>
-          </div>
-          <div *ngFor="let blog of $blogPosts | async" class="mt-12 max-w-xs">
-            <a [routerLink]="blog.route">
-              <img [attr.src]="blog.image" class="h-80 w-80">
-            </a>
-            <div class="flex flex-row justify-between mt-2">
-              <a [routerLink]="blog.route">
-                <p class="text-xl font-semibold underline underline-offset-1">{{blog.title}}</p>
-              </a>
-              <p>{{blog.date}}</p>
-            </div>
-            <p class="text-lg">{{blog.description}}</p>
-            <div class="flex flex-row justify-start mt-2">
-              <p *ngFor="let tag of blog.tags" class="mr-8 rounded-full bg-slate-500 px-2 py-1">{{tag}}</p>
-            </div>
-          </div>
-          <div *ngFor="let blog of $blogPosts | async" class="mt-12 max-w-xs">
-            <a [routerLink]="blog.route">
-              <img [attr.src]="blog.image" class="h-80 w-80">
-            </a>
-            <div class="flex flex-row justify-between mt-2">
-              <a [routerLink]="blog.route">
-                <p class="text-xl font-semibold underline underline-offset-1">{{blog.title}}</p>
-              </a>
-              <p>{{blog.date}}</p>
-            </div>
-            <p class="text-lg">{{blog.description}}</p>
-            <div class="flex flex-row justify-start mt-2">
-              <p *ngFor="let tag of blog.tags" class="mr-8 rounded-full bg-slate-500 px-2 py-1">{{tag}}</p>
-            </div>
-          </div>
           <div *ngFor="let blog of $blogPosts | async" class="mt-12 max-w-xs">
             <a [routerLink]="blog.route">
               <img [attr.src]="blog.image" class="h-80 w-80">
@@ -83,7 +38,7 @@
         </div>
       </div>
     </div>
-    <div class="flex flex-wrap justify-center pb-10 absolute bottom-0 ml-auto mr-auto left-0 right-0">
+    <div class="flex flex-wrap justify-center pb-24 absolute bottom-0 ml-auto mr-auto left-0 right-0">
       <p>
         Designed with <span>{{ isDark ? '💜' : '❤️' }}</span>
       </p>

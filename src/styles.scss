@@ -55,3 +55,45 @@
 .utterances {
   margin-left: 20px;
 }
+
+.blog-post-content {
+  h1 {
+    font-size: 40px !important;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 32px;
+    font-weight: 400;
+  }
+
+  h3 {
+    font-size: 24px;
+    font-weight: 200;
+  }
+
+  p {
+    margin-bottom: 15px;
+  }
+
+  pre {
+    margin: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+  }
+
+  a {
+    text-decoration: underline;
+    font-weight: 600;
+  }
+
+}
+
+.dark {
+  .blog-post-content {
+    pre {
+      background-color: black;
+    }
+  }
+}

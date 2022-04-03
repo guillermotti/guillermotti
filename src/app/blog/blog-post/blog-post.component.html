@@ -16,11 +16,19 @@
       <button class="flex-none w-36 h-12 font-medium z-50" (click)="changeMode()">{{textButton}}</button>
     </div>
     <div *ngIf="$blogPostMetadata | async as blogPost" class="mb-12 flex flex-col justify-start w-screen">
-      <div class="mx-12 mt-8 sm:mt-16 divide-y-2 divide-gray">
-        <p class="text-xl font-extrabold">{{blogPost.title}}</p>
+      <div class="ml-12 mr-12 mt-8 sm:mt-16 divide-y-2 divide-gray">
+        <div class="grid grid-cols-12 mb-4">
+          <div>
+            <p class="text-xs md:text-sm font-bold mb-2">{{blogPost.date}}</p>
+            <p *ngFor="let tag of blogPost.tags" class="text-xs text-gray">#{{tag}}</p>
+          </div>
+          <div class="col-start-2 col-span-11">
+            <p class="text-2xl sm:text-6xl mx-5">{{blogPost.title}}</p>
+          </div>
+        </div>
         <div class="grid grid-cols-12">
           <div class="col-start-2 col-span-11 border-l-2 border-gray">
-            <div class="mx-5 my-10">
+            <div class="blog-post-content mx-5 my-10 max-w-3xl text-justify">
               <scully-content></scully-content>
             </div>
           </div>
@@ -29,6 +37,16 @@
           <div [appUtterances]="true" class="col-start-2 col-span-11 border-l-2 border-gray"></div>
         </div>
       </div>
+    </div>
+    <div class="flex flex-wrap justify-center pb-24">
+      <p>
+        Designed with <span>{{ isDark ? '💜' : '❤️' }}</span>
+      </p>
+      <p class="ml-2">by
+        <a href="https://alexalbuerne.com" target="_blank" rel="noopener noreferrer" class="underline">
+          @alex
+        </a>
+      </p>
     </div>
   </div>
 </div>

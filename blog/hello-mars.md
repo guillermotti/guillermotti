@@ -11,9 +11,9 @@ Hey! My name is Guillermo but all my friends call me **Guille** and I'm 29. I'm 
 
 At the moment of writing this I'm working as Platform Engineer at [empathy.co](empathy.co), the best company I've ever worked for. After 2 years and a half I learned a lot about cloud, infrastructure as code, scripting, containers, Kubernetes, DevOps, CI/CD, security, GitOps and many many more things.
 
-Before working at empathy.co I've been working in *DXC Technology* (formerly *CSC*) and *Indra* with mostly Angular and the previous AngularJS so I have some background on JavaScript, TypeScript, NodeJS and frontend development. Also I've been working with Java for a while at my intership but I don't remember almost anything about it.
+I worked at *DXC Technology* (formerly *CSC*) and *Indra* before joining empathy.co, mostly with Angular and the previous AngularJS so I have some background on JavaScript, TypeScript, NodeJS and frontend development. Also I worked with Java for a while at my intership but my knowledge is quite basic.
 
-In my personal time I've been playing a lot with serverless development and cloud before joining [empathy.co](empathy.co). I gave a try to Firebase, AWS Amplify and CI/CD cloud providers like Circle CI to build interesting websites like [feta.es](feta.es).
+In my personal time I've been playing a lot with serverless development and cloud before joining empathy.co. I give a try to Firebase, AWS Amplify and CI/CD cloud providers like Circle CI to build interesting websites like [feta.es](feta.es).
 
 Talking about my personal interests, I enjoy travelling to anywhere with my girlfriend Inés 🧡, celebrating with my family, drinking 🍻 with my friends and listening to electronic music 👽.
 

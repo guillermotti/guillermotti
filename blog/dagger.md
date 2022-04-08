@@ -2,7 +2,7 @@
 title: Introduction to Dagger
 description: First research into Dagger and how it works. 🧪
 publish: true
-image: '/assets/images/photo.png'
+image: '/assets/images/dagger.svg'
 tags: [CI/CD, dagger]
 date: April 8th 2022
 ---

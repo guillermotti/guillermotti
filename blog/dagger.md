@@ -145,10 +145,10 @@ Also there are limited packages available on the ["universe" of Dagger](https://
 
 # Conclusion
 
-Dagger is really cool! As we checked before it's very easy to implement and the pipelines are ready to be executed without any change between local and CI environments. 
+Dagger is really cool! As we checked before it's very easy to implement and the pipelines are ready to be executed without any change between **local** and **CI environments**. 
 
-It reminds me to Kubernetes in the agnosticism. Kubernetes is agnostic to run containers in the same way regardless of the cloud provider or infrastructure. Dagger is agnostic to run CI/CD pipelines because you are able to run it locally, within GitHub Actions or any other CI environment of your choice.
+It reminds me to Kubernetes in the **agnosticism**. Kubernetes is agnostic to run containers in the same way regardless of the cloud provider or infrastructure. Dagger is agnostic to run CI/CD pipelines because you are able to run it locally, within GitHub Actions or any other CI environment of your choice.
 
-It's also important to remember that Dagger won't replace any CI environment. Dagger will enrich the CI/CD pipelines adding a portable development layer on top of it.
+It's also important to remember that Dagger won't replace any CI environment. Dagger will enrich the CI/CD pipelines adding a **portable development layer** on top of it.
 
 Meanwhile Dagger docs keep evolving, I will continue researching more in deep the benefits and trying to build more examples which I will add to the repository. As the pipelines are reusable, the repo should be like a library of pipelines in the future. Don't hesitate to create a PR and add your own pipelines!

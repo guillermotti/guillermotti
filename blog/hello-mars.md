@@ -7,7 +7,7 @@ tags: [welcome, personal]
 date: April 3rd 2022
 ---
 
-Hey! My name is Guillermo but all my friends call me **Guille** and I'm 29. I'm going to start this awesome adventure and share to whoever will read these lines all what I'm learning at work, with my personal projects and from the internet! You can find me as `guillermotti` in social networks and I'll be happy to talk to you about anything!
+Hey! My name is Guillermo but all my friends call me **Guille**. I'm 29 and from [Gijón (Asturias)](https://www.google.com/maps/place/gijon), the most beautiful city in the world. I'm going to start this awesome adventure and share to whoever may read these lines all what I'm learning at work, with my personal projects and from the internet! You can find me as `guillermotti` in social networks and I'll be happy to talk to you about anything!
 
 At the moment of writing this I'm working as Platform Engineer at [empathy.co](empathy.co), the best company I've ever worked for. After 2 years and a half I learned a lot about cloud, infrastructure as code, scripting, containers, Kubernetes, DevOps, CI/CD, security, GitOps and many many more things.
 

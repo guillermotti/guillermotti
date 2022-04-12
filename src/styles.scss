@@ -81,6 +81,14 @@
     padding: 10px;
     background-color: white;
     border-radius: 5px;
+    overflow-x: auto;
+  }
+
+  p {
+    code {
+      font-size: 0.75em;
+      font-weight: 600;
+    }
   }
 
   a {

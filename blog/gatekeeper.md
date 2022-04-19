@@ -149,3 +149,21 @@ By default, the **Constraint** property is set as `spec.enforcementAction: deny`
 OPA is very powerful and Gatekeeper integrates OPA functionality really well into kubernetes. The most useful policies are already created and available in [this repo](https://github.com/open-policy-agent/gatekeeper-library/tree/master/library) so probably you just need to copy and paste the **ConstraintTemplates** and **Constraints** to the cluster modifying a bit the **Constraint** to apply to your needs but you won't need to modify the Rego code in the policy.
 
 The worst thing related to OPA is Rego which could be tricky and the learning curve is quite long. Anyway, there is a [playground](https://play.openpolicyagent.org/) where you can play with Rego and it's very cool!
+
+## References
+
+- https://www.openpolicyagent.org/
+- https://github.com/open-policy-agent/gatekeeper/
+- https://play.openpolicyagent.org
+- https://www.openpolicyagent.org/docs/latest/policy-language/
+- https://arapulido.github.io/blog/2021/08/02/testing-your-kubernetes-config-against-policy-ci/
+- https://aws.amazon.com/blogs/containers/policy-based-countermeasures-for-kubernetes-part-1/
+- https://kubernetes.io/blog/2019/08/06/opa-gatekeeper-policy-and-governance-for-kubernetes/
+- https://neonmirrors.net/post/2021-02/kubernetes-policy-comparison-opa-gatekeeper-vs-kyverno/
+- https://www.openpolicyagent.org/docs/latest/kubernetes-primer/
+- https://open-policy-agent.github.io/gatekeeper/website/docs/library/
+- https://github.com/open-policy-agent/gatekeeper-library/tree/master/library/general
+- https://github.com/anderseknert/awesome-opa#kubernetes
+- https://techblost.com/integrating-open-policy-agent-opa-with-kubernetes/
+- https://aws.amazon.com/blogs/opensource/using-open-policy-agent-on-amazon-eks/
+- https://dustinspecker.com/posts/open-policy-agent-konstraint/

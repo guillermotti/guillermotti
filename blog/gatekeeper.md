@@ -15,7 +15,7 @@ A well known natural step to secure the cluster and avoid certain undesired acti
 
 There are several tools to integrate policies within a Kubernetes cluster. Before upgrading to version 1.21, there was a way to implement the governance with an internal kubernetes resource, the `PodSecurityPolicy`, but this resource [is being deprecated](https://kubernetes.io/blog/2021/04/06/podsecuritypolicy-deprecation-past-present-and-future/). For that reason another tools became popular, as it's also explained in the previous link, [K-Rail](https://github.com/cruise-automation/k-rail), [Kyverno](https://github.com/kyverno/kyverno/) and [OPA/Gatekeeper](https://github.com/open-policy-agent/gatekeeper/) are the most known options.
 
-After researching these alternatives, we find that the power of OPA is bigger than the others. OPA is not only attached to Kubernetes and can be used for validate policies in any other system where you provide a status with an input file (JSON for example) and then OPA will validate those policies to verify the input satisfies them. If that's the case, you are able to perform the following actions, otherwise you shouldn't continue.
+After researching these alternatives, I think that the power of OPA is bigger than the others. OPA is not only attached to Kubernetes and can be used for validate policies in any other system where you provide a status with an input file (JSON for example) and then OPA will validate those policies to verify the input satisfies them. If that's the case, you are able to perform the following actions, otherwise you shouldn't continue.
 
 There is a [wonderful repository](https://github.com/anderseknert/awesome-opa) containing great resources about OPA and its maintainer, [Anders](https://twitter.com/anderseknert), is adding more and more resources each day.
 
@@ -23,7 +23,7 @@ There is a [wonderful repository](https://github.com/anderseknert/awesome-opa) c
 
 To integrate OPA within kubernetes, you must install [Gatekeeper](https://open-policy-agent.github.io/gatekeeper/website/docs/install/) first.
 
-We find the Helm chart as the best way to install it. And with the default `values.yaml` you can deploy Gatekeeper easily in your cluster.
+I find the Helm chart as the best way to install it. And with the default `values.yaml` you can deploy Gatekeeper easily in your cluster.
 
 ```sh
 k get po                                                                          

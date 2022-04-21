@@ -15,9 +15,17 @@ A well known natural step to secure the cluster and avoid certain undesired acti
 
 There are several tools to integrate policies within a Kubernetes cluster. Before upgrading to version 1.21, there was a way to implement the governance with an internal kubernetes resource, the `PodSecurityPolicy`, but this resource [is being deprecated](https://kubernetes.io/blog/2021/04/06/podsecuritypolicy-deprecation-past-present-and-future/). For that reason another tools became popular, as it's also explained in the previous link, [K-Rail](https://github.com/cruise-automation/k-rail), [Kyverno](https://github.com/kyverno/kyverno/) and [OPA/Gatekeeper](https://github.com/open-policy-agent/gatekeeper/) are the most known options.
 
-After researching these alternatives, I think that the power of OPA is bigger than the others. OPA is not only attached to Kubernetes and can be used for validate policies in any other system where you provide a status with an input file (JSON for example) and then OPA will validate those policies to verify the input satisfies them. If that's the case, you are able to perform the following actions, otherwise you shouldn't continue.
+After researching these alternatives, I think that the power of OPA is bigger than the others. OPA is not only attached to Kubernetes and can be used for validating policies in any other system where you provide a status with an input file (JSON for example) and then OPA will validate those policies to verify the input satisfies them. If that's the case, you are able to perform the following actions, otherwise you shouldn't continue.
 
 There is a [wonderful repository](https://github.com/anderseknert/awesome-opa) containing great resources about OPA and its maintainer, [Anders](https://twitter.com/anderseknert), is adding more and more resources each day.
+
+There are several ways to integrate OPA in kubernetes as the [OPA documentation](https://www.openpolicyagent.org/docs/latest/kubernetes-introduction/) points to. 
+
+- [Plain OPA + Kube-mgmt](https://www.openpolicyagent.org/docs/latest/kubernetes-introduction/#how-does-it-work-with-plain-opa-and-kube-mgmt)
+	- [MagTape](https://github.com/tmobile/magtape) is an example of this integration that can be installed aswell.
+- [OPA/Gatekeeper](https://open-policy-agent.github.io/gatekeeper/website/docs/)
+	- The first version of Gatekeeper (**v1.0**) also was using **kube-mgmt**.
+	- The current version is **v3.7.0** which is the one I'm referring to.
 
 ## OPA/Gatekeeper installation
 
@@ -144,6 +152,13 @@ Before applying any policy and restrict the resources from violations you can se
 
 By default, the **Constraint** property is set as `spec.enforcementAction: deny` so the policy will prevent to apply those resources to the kubernetes api-server.
 
+## Caveats
+
+By default Gatekeeper if is down there are no validations for the policies so any resource can't be validated. There is a way to enforce the policies even Gatekeeper is down but it's not recommended and can be tricky to resolve the problem. Important reads:
+
+- https://open-policy-agent.github.io/gatekeeper/website/docs/#admission-webhook-fail-open-by-default
+- https://open-policy-agent.github.io/gatekeeper/website/docs/failing-closed/
+
 ## Conclusion
 
 OPA is very powerful and Gatekeeper integrates OPA functionality really well into kubernetes. The most useful policies are already created and available in [this repo](https://github.com/open-policy-agent/gatekeeper-library/tree/master/library) so probably you just need to copy and paste the **ConstraintTemplates** and **Constraints** to the cluster modifying a bit the **Constraint** to apply to your needs but you won't need to modify the Rego code in the policy.
@@ -167,3 +182,5 @@ The worst thing related to OPA is Rego which could be tricky and the learning cu
 - https://techblost.com/integrating-open-policy-agent-opa-with-kubernetes/
 - https://aws.amazon.com/blogs/opensource/using-open-policy-agent-on-amazon-eks/
 - https://dustinspecker.com/posts/open-policy-agent-konstraint/
+- https://github.com/plexsystems/konstraint
+- https://medium.com/@LachlanEvenson/testing-gatekeeper-constraints-with-gator-cli-da31050a6564

@@ -21,6 +21,4 @@ Also I've been playing *football* (soccer) since I started to walk. But unfortun
 
 ![Japan subway](/assets/images/photo.png)
 
-That's basically me!
-
-My idea is to write at least once per week. Let's see if I can get those numbers. Stay tuned! 🚀
+That's basically me! Stay tuned! 🚀

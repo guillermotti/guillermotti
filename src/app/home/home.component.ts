@@ -36,7 +36,9 @@ export class HomeComponent implements OnInit {
   posts = [
     { "title": "Git for everyone", "description": "Introduction to git", "href": "https://medium.com/empathyco/git-for-everyone-8bf7e9efc254" },
     { "title": "Documentation As Code", "description": "Docusaurus and MDX", "href": "https://medium.com/empathyco/documentation-as-code-10e83b02a3a5" },
-    { "title": "Guide to optimise user management", "description": "Integrating Personio, GitHub & Google Workspace", "href": "https://medium.com/empathyco/user-management-with-personio-github-google-workspace-c1feae314356" },
+    { "title": "Guide to optimise user management", "description": "Integrating Personio, GitHub & Google Workspace", "href": "https://engineering.empathy.co/personio-github-googleworkspace/" },
+    { "title": "ElasticSearch Data Migration in Kubernetes", "description": "Management of ElasticSearch clusters", "href": "https://engineering.empathy.co/elasticsearch-data-migration-within-k8s/" },
+    { "title": "Distributed Load Testing with K6", "description": "K6 running in Kubernetes with Argo Workflows", "href": "https://engineering.empathy.co/distributed-load-testing-with-k6/" },
   ]
   talks = [
     { "event": "CLOUD NATIVE ASTURIAS", "title": "How to manage GitHub organizations with Terraform", "date": "May, 2021", "href": "https://www.youtube.com/watch?v=J2vGGGa4Y20" },

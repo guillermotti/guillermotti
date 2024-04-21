@@ -15,11 +15,10 @@
     </div>
     <div class="flex flex-col sm:flex-row text-xl md:text-3xl font-light mx-12 my-6">
       <div class="flex-none max-w-md">
-        <p><span class="font-medium">Guille</span> is a DevOps engineer based in Gijón, Asturias. Working at
-          <span class="font-medium underline"><a href="https://bvnk.com" target="_blank"
-              rel="noopener noreferrer">BVNK</a></span>, formerly at <span class="font-medium">empathy.co</span> among some others. 
-              Checkout awesome adventures in his personal <a
-            [routerLink]="['/blog']"><span class="font-medium underline">blog</span></a>!</p>
+        <p><span class="font-medium">Guille</span> is a Platform Engineer based in Gijón, Asturias - Spain. He is a
+          <span class="font-medium underline"><a href="https://www.cncf.io/training/kubestronaut/" target="_blank"
+              rel="noopener noreferrer">CNCF Kubestronaut</a></span>, passionate about all <span class="font-medium">Open Source</span> related. 
+              Checkout his latest <a href="https://resiz.es"><span class="font-medium underline">project</span></a>!</p>
       </div>
       <div class="flex-grow"></div>
       <div class="flex flex-wrap sm:flex-col justify-around">
@@ -38,10 +37,6 @@
         <div class="flex flex-wrap justify-between">
           <div *ngFor="let cert of certifications" class="mt-8 mb-4">
             <div class="flex flex-wrap mb-3">
-              <svg *ngIf="cert.d" width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" attr.d="{{cert.d}}"
-                  attr.fill="{{ isDark ? '#FFF' : '#000' }}" />
-              </svg>
               <img *ngIf="cert.src" width="40" src="{{cert.src}}">
               <p class="mt-2 ml-3">{{cert.date}}</p>
             </div>
@@ -92,7 +87,7 @@
           </div>
         </div>
         <div class="mx-12 mt-8 sm:mt-16 divide-y-2 divide-gray">
-          <p class="text-xl font-extrabold">Projects</p>
+          <p class="text-xl font-extrabold">Side Projects</p>
           <div class="">
             <div class="mt-8 flex flex-wrap">
               <a *ngFor="let project of projects" href="{{ project.href }}" target="_blank" rel="noopener noreferrer"
@@ -114,7 +109,7 @@
         Designed with <span>{{ isDark ? '💜' : '❤️' }}</span>
       </p>
       <p class="ml-2">by
-        <a href="https://alexalbuerne.com" target="_blank" rel="noopener noreferrer" class="underline">
+        <a href="https://alejandru.com" target="_blank" rel="noopener noreferrer" class="underline">
           @alex
         </a>
       </p>

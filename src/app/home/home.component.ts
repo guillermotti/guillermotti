@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit {
   certifications = [
     { "name": "CNCF Kubestronaut", "description": "All Kubernetes Certifications", "date": "December, 2022", "badge": "https://www.credly.com/badges/c87632d0-62e9-44fa-99d7-79ea7d14c94b", "src": "../assets/kubestronaut.png" },
     { "name": "CKS", "description": "Certified Kubernetes Security Specialist", "date": "December, 2022", "badge": "https://www.credly.com/badges/03cab718-7fd5-4999-a065-c22715eb1a5a", "src": "../assets/cks.png" },
-    { "name": "Linux Foundation", "description": "IT - Associate", "date": "November, 2022", "badge": "https://www.credly.com/badges/3bf111e7-82c9-4d2b-aea5-89c269047154", "src": "../assets/it-associate.png" },
+    { "name": "Linux Foundation", "description": "IT - Associate", "date": "November, 2022", "badge": "https://www.credly.com/badges/3bf111e7-82c9-4d2b-aea5-89c269047154", "src": "../assets/linux-it-associate.png" },
     { "name": "AWS", "description": "Certified Developer - Associate", "date": "March, 2022", "badge": "https://www.credly.com/badges/8ffae0c0-0718-41f6-b7f7-10a71f6f3438", "src": "../assets/aws-developer.png" },
     { "name": "AWS", "description": "Certified SysOps Administrator - Associate", "date": "January, 2022", "badge": "https://www.credly.com/badges/e6bba1a5-82e5-4887-9583-6a6ae1911301", "src": "../assets/aws-sysops.png" },
     { "name": "AWS", "description": "Certified Solutions Architect - Associate", "date": "January, 2022", "badge": "https://www.credly.com/badges/a16f19d6-ea33-4cfc-b54d-299709f5cd3e", "src": "../assets/aws-architect.png" },

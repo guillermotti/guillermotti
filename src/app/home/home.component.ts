@@ -49,6 +49,7 @@ export class HomeComponent implements OnInit {
     { "event": "KUBERNETES COMMUNITY DAYS MUNICH", "title": "Building the best internal developers' portal with Backstage", "date": "Oct, 2022", "href": "https://community.cncf.io/events/details/cncf-kcd-munich-presents-kubernetes-community-days-munich-2022-1/" },
     { "event": "CLOUD NATIVE REJEKTS", "title": "Building the best internal developers' portal with Backstage", "date": "Oct, 2022", "href": "https://youtu.be/pHe_ePq83zc?t=14465" },
     { "event": "KUBERNETES COMMUNITY DAYS SPAIN", "title": "K8s Happiness: From Kustomize to Helm", "date": "Nov, 2022", "href": "https://www.youtube.com/watch?v=CbAju2FUp40" },
+    { "event": "PLATFORMERS COMMUNITY", "title": "The Journey to Crafting the Perfect Platform", "date": "April, 2024", "href": "https://www.youtube.com/watch?v=A2U0YjspjRY" },
   ]
   projects = [
     { "name": "CMMSE", "href": "https://cmmse-app.firebaseapp.com" },

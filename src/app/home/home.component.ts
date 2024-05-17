@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
     { "href": "https://www.linkedin.com/in/guillermotti/", "width": "24", "height": "23", "d": "M5.39 3.04a2.42 2.42 0 11-4.84 0 2.42 2.42 0 014.84 0zm.07 4.2H.62v15.13h4.84V7.26zm7.63 0H8.3v15.14h4.76v-7.94c0-4.43 5.76-4.84 5.76 0v7.94h4.77v-9.59c0-7.45-8.53-7.17-10.53-3.51l.04-2.03z" },
   ];
   certifications = [
-    { "name": "CNCF Kubestronaut", "description": "All Kubernetes Certifications", "date": "December, 2022", "badge": "https://www.credly.com/badges/c87632d0-62e9-44fa-99d7-79ea7d14c94b", "src": "../assets/kubestronaut.png" },
+    { "name": "CNCF Kubestronaut", "description": "All Kubernetes Certifications", "date": "March, 2024", "badge": "https://www.credly.com/badges/c87632d0-62e9-44fa-99d7-79ea7d14c94b", "src": "../assets/kubestronaut.png" },
     { "name": "CKS", "description": "Certified Kubernetes Security Specialist", "date": "December, 2022", "badge": "https://www.credly.com/badges/03cab718-7fd5-4999-a065-c22715eb1a5a", "src": "../assets/cks.png" },
     { "name": "Linux Foundation", "description": "IT - Associate", "date": "November, 2022", "badge": "https://www.credly.com/badges/3bf111e7-82c9-4d2b-aea5-89c269047154", "src": "../assets/linux-it-associate.png" },
     { "name": "AWS", "description": "Certified Developer - Associate", "date": "March, 2022", "badge": "https://www.credly.com/badges/8ffae0c0-0718-41f6-b7f7-10a71f6f3438", "src": "../assets/aws-developer.png" },

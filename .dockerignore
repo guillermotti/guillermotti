@@ -1,0 +1,12 @@
+node_modules
+dist
+.git
+.DS_Store
+*.md
+target
+web
+assets
+Cargo.toml
+Cargo.lock
+Trunk.toml
+
